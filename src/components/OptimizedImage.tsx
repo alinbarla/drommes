@@ -1,4 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import { 
+  getOptimizedImageUrl, 
+  generateResponsiveImageSources,
+  getImageOptimizationSettings,
+  calculateOptimalDimensions,
+  generateImagePlaceholder,
+  preloadImage,
+  createLazyImageObserver
+} from '../utils/imageUtils';
 
 interface OptimizedImageProps {
   src: string;
@@ -8,47 +17,94 @@ interface OptimizedImageProps {
   height?: number;
   priority?: boolean;
   fallbackSrc?: string;
+  config?: 'hero' | 'thumbnail' | 'gallery' | 'card' | 'default';
+  quality?: number;
+  lazy?: boolean;
 }
 
 const OptimizedImage: React.FC<OptimizedImageProps> = ({
   src,
   alt,
   className = '',
-  width,
-  height,
+  width = 800,
+  height = 600,
   priority = false,
-  fallbackSrc
+  fallbackSrc,
+  config = 'card',
+  quality = 80,
+  lazy = true
 }) => {
   const [imageError, setImageError] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [isInView, setIsInView] = useState(!lazy || priority);
+  const imgRef = useRef<HTMLImageElement>(null);
 
-  // Enhanced image URL handling with better optimization
+  // Get optimization settings
+  const optimizationSettings = getImageOptimizationSettings(
+    config || 'default',
+    width,
+    height
+  );
+  
+  // Calculate optimal dimensions
+  const optimalDimensions = calculateOptimalDimensions(
+    width, 
+    height, 
+    optimizationSettings.devicePixelRatio || 1
+  );
+
+  // Generate responsive sources
+  const { srcSet, sizes } = generateResponsiveImageSources(
+    src,
+    optimalDimensions.width,
+    optimalDimensions.height,
+    quality || optimizationSettings.quality
+  );
+
+  // Generate optimized fallback URL
   const getOptimizedUrl = (url: string) => {
-    // For Pexels images
-    if (url.includes('pexels.com')) {
-      const baseUrl = url.split('?')[0];
-      return `${baseUrl}?auto=format&fit=crop&w=${width || 800}&h=${height || 600}&q=80&dpr=2`;
-    }
-    
-    // For Unsplash images
-    if (url.includes('unsplash.com')) {
-      const baseUrl = url.split('?')[0];
-      return `${baseUrl}?w=${width || 800}&h=${height || 600}&fit=crop&crop=center&auto=format&q=80&dpr=2`;
-    }
-    
-    // For local images, add cache busting and optimization hints
-    if (url.startsWith('/')) {
-      const separator = url.includes('?') ? '&' : '?';
-      return `${url}${separator}t=${Date.now()}&w=${width || 800}&h=${height || 600}`;
-    }
-    
-    // For external images, return as-is
-    return url;
+    return getOptimizedImageUrl(url, {
+      ...optimizationSettings,
+      width: optimalDimensions.width,
+      height: optimalDimensions.height,
+      quality: quality || optimizationSettings.quality
+    });
   };
+
+  // Intersection Observer for lazy loading
+  useEffect(() => {
+    if (!lazy || priority || isInView) return;
+
+    const observer = createLazyImageObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer?.disconnect();
+        }
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '50px'
+      }
+    );
+
+    if (observer && imgRef.current) {
+      observer.observe(imgRef.current);
+    }
+
+    return () => observer?.disconnect();
+  }, [lazy, priority, isInView]);
+
+  // Preload critical images
+  useEffect(() => {
+    if (priority && isInView) {
+      const optimizedSrc = getOptimizedUrl(src);
+      preloadImage(optimizedSrc, width, height).catch(console.error);
+    }
+  }, [priority, isInView, src, width, height]);
 
   const handleImageError = () => {
     console.error(`❌ Image failed to load: ${src}`);
-    console.error(`❌ Error details:`, { src, fallbackSrc, imageError });
     if (fallbackSrc && !imageError) {
       setImageError(true);
     }
@@ -59,30 +115,58 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
     setImageLoaded(true);
   };
 
-  const imageSrc = imageError && fallbackSrc ? fallbackSrc : getOptimizedUrl(src);
+  const imageSrc = imageError && fallbackSrc ? getOptimizedUrl(fallbackSrc) : getOptimizedUrl(src);
 
   return (
-    <div className={`relative overflow-hidden ${className}`}>
-      <img
-        src={imageSrc}
-        alt={alt}
-        width={width}
-        height={height}
-        loading={priority ? 'eager' : 'lazy'}
-        decoding={priority ? 'sync' : 'async'}
-        onError={handleImageError}
-        onLoad={handleImageLoad}
-        className={`w-full h-full object-cover transition-opacity duration-300 ${
-          imageLoaded ? 'opacity-100' : 'opacity-0'
-        }`}
-        style={{
-          backgroundColor: '#f3f4f6' // Light gray placeholder
-        }}
-        fetchPriority={priority ? 'high' : 'auto'}
-      />
-      {!imageLoaded && (
+    <div 
+      ref={imgRef}
+      className={`relative overflow-hidden ${className}`}
+      style={{ width, height }}
+    >
+      {!isInView && (
         <div className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center">
-          <div className="w-8 h-8 border-4 border-gray-300 border-t-navy-900 rounded-full animate-spin"></div>
+          <div className="w-8 h-8 border-2 border-gray-300 border-t-gold-500 rounded-full animate-spin"></div>
+        </div>
+      )}
+      
+      {isInView && (
+        <picture>
+          {/* AVIF source for modern browsers */}
+          <source
+            srcSet={srcSet.replace(/f=webp/g, 'f=avif')}
+            sizes={sizes}
+            type="image/avif"
+          />
+          {/* WebP source for good browser support */}
+          <source
+            srcSet={srcSet}
+            sizes={sizes}
+            type="image/webp"
+          />
+          {/* Fallback image */}
+          <img
+            src={imageSrc}
+            alt={alt}
+            width={width}
+            height={height}
+            loading={priority ? 'eager' : 'lazy'}
+            decoding={priority ? 'sync' : 'async'}
+            onError={handleImageError}
+            onLoad={handleImageLoad}
+            className={`w-full h-full object-cover transition-opacity duration-300 ${
+              imageLoaded ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{
+              backgroundColor: '#f3f4f6'
+            }}
+            fetchPriority={priority ? 'high' : 'auto'}
+          />
+        </picture>
+      )}
+      
+      {isInView && !imageLoaded && (
+        <div className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center">
+          <div className="w-8 h-8 border-2 border-gray-300 border-t-gold-500 rounded-full animate-spin"></div>
         </div>
       )}
     </div>

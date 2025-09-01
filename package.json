@@ -9,7 +9,9 @@
     "server": "node server.cjs",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "analyze-images": "node scripts/optimize-images.js",
+    "optimize": "npm run analyze-images && npm run build"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
@@ -34,6 +36,7 @@
     "globals": "^15.9.0",
     "nodemailer": "^6.10.1",
     "postcss": "^8.4.35",
+    "sharp": "^0.34.3",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.3.0",
