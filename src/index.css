@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Selection Colors */
+::selection {
+  background-color: #E1A140; /* Gold */
+  color: #532200; /* Puce */
+}
+
+::-moz-selection {
+  background-color: #E1A140; /* Gold */
+  color: #532200; /* Puce */
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EFCFA0; /* Sand Dollar */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E1A140; /* Gold */
+  border-radius: 6px;
+  border: 2px solid #EFCFA0; /* Sand Dollar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #914110; /* Burnt Orange */
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #E1A140 #EFCFA0; /* Gold thumb, Sand Dollar track */
+}
+
+/* Focus styles for better accessibility - removed for cleaner UI */
+*:focus {
+  outline: none;
+}
+
+/* Custom button focus styles - removed for cleaner UI */
+button:focus,
+a:focus {
+  outline: none;
+}
+
+/* Custom input focus styles - removed for cleaner UI */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #E1A140; /* Gold */
+}
+
+/* Custom Premium Button Style */
+.btn-premium {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FFE55A 0%, #FFD147 8%, #D4B85A 30%, #C4A86A 40%, transparent 80%),
+              radial-gradient(ellipse farthest-corner at left top, #FFF8DC 0%, #FFFACD 8%, #F0E68C 25%, #B8860B 62.5%, #B8860B 100%);
+  color: #532200; /* Puce text for contrast */
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-premium:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(225, 161, 64, 0.4);
+}
+
+.btn-premium:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(225, 161, 64, 0.2);
+}
+
+.btn-premium:focus {
+  outline: none;
+}

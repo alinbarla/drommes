@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+
+# Sitemaps
+Sitemap: https://drommehuset.no/sitemap.xml
+Sitemap: https://drommehuset.no/image-sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Host
+Host: https://drommehuset.no

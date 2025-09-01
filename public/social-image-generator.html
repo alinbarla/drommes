@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Image Generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .social-image {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #EFCFA0 0%, #E1A140 50%, #914110 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .content {
+            text-align: center;
+            color: #532200;
+            z-index: 2;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            background: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .subtitle {
+            font-size: 32px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .services {
+            font-size: 24px;
+            opacity: 0.8;
+            max-width: 800px;
+            line-height: 1.4;
+        }
+        .pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image: 
+                radial-gradient(circle at 25% 25%, #532200 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, #532200 2px, transparent 2px);
+            background-size: 100px 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="social-image">
+        <div class="pattern"></div>
+        <div class="content">
+            <div class="logo">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+                    <path d="M20 80L50 20L80 80H20Z" fill="#E1A140"/>
+                    <path d="M35 80L50 50L65 80H35Z" fill="#532200"/>
+                </svg>
+            </div>
+            <div class="title">Drømme Huset AS</div>
+            <div class="subtitle">Bygg og Anlegg</div>
+            <div class="services">Tømrer • Murer • Elektriker • Rørlegger • Våtrom • Kjøkken<br>Over 25 års erfaring i Drammen-området</div>
+        </div>
+    </div>
+</body>
+</html>
