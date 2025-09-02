@@ -67,7 +67,7 @@ const Home = () => {
     {
       id: 5,
       title: 'Sparkling Maling',
-      description: 'Profesjonell maling og overflatebehandling for alle overflater.Vi bruker miljøvennlige produkter og tilbyr både innvendig og utvendig maling.',
+      description: 'Profesjonell maling og overflatebehandling for alle overflater. Vi bruker miljøvennlige produkter og tilbyr både innvendig og utvendig maling.',
       image: '/images/maling/main.webp',
       category: 'Maling'
     },
