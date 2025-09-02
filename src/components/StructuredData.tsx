@@ -15,7 +15,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
           "@type": "LocalBusiness",
           "name": "Drømme Huset AS",
           "description": "Profesjonelle bygg og anleggstjenester i Drammen-området. Over 25 års erfaring med tømrer, murer, elektriker og mer.",
-          "url": "https://drommehuset.no",
+          "url": "https://dromehusetditt.no",
           "telephone": "+4747294697",
           "email": "drammenbygg@gmail.com",
           "address": {
@@ -31,7 +31,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
             "longitude": "10.2045"
           },
           "openingHours": "Mo-Su 08:00-20:00",
-          "priceRange": "$$",
+          
           "areaServed": [
             "Drammen",
             "Lier", 
@@ -168,7 +168,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
             "@type": "ListItem",
             "position": index + 1,
             "name": breadcrumb.name,
-            "item": `https://drommehuset.no${breadcrumb.path === '/' ? '' : breadcrumb.path}`
+            "item": `https://dromehusetditt.no${breadcrumb.path === '/' ? '' : breadcrumb.path}`
           }))
         };
 
@@ -196,14 +196,14 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
           "author": {
             "@type": "Organization",
             "name": "Drømme Huset AS",
-            "url": "https://drommehuset.no"
+            "url": "https://dromehusetditt.no"
           },
           "publisher": {
             "@type": "Organization",
             "name": "Drømme Huset AS",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://drommehuset.no/logo.png"
+              "url": "https://dromehusetditt.no/logo.png"
             }
           },
           "datePublished": data.datePublished,
@@ -234,11 +234,11 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
 
       case 'Organization':
         return {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Drømme Huset AS",
-          "url": "https://drommehuset.no",
-          "logo": "https://drommehuset.no/logo.png",
+                "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Drømme Huset AS",
+      "url": "https://dromehusetditt.no",
+          "logo": "https://dromehusetditt.no/logo.png",
           "description": "Profesjonelle bygg og anleggstjenester i Drammen-området. Over 25 års erfaring med tømrer, murer, elektriker og mer.",
           "foundingDate": "1999",
           "address": {
@@ -269,7 +269,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
           "totalTime": data.totalTime,
           "estimatedCost": {
             "@type": "MonetaryAmount",
-            "currency": "NOK",
+            
             "value": data.estimatedCost
           },
           "supply": data.supplies?.map((supply: any) => ({
@@ -302,8 +302,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
           },
           "offers": {
             "@type": "Offer",
-            "price": data.price,
-            "priceCurrency": "NOK",
+            
             "availability": "https://schema.org/InStock",
             "seller": {
               "@type": "Organization",
@@ -317,7 +316,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
           "@context": "https://schema.org",
           "@type": "WebSite",
           "name": "Drømme Huset AS",
-          "url": "https://drommehuset.no",
+          "url": "https://dromehusetditt.no",
           "description": "Profesjonelle bygg og anleggstjenester i Drammen-området",
           "publisher": {
             "@type": "Organization",
@@ -325,7 +324,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
           },
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://drommehuset.no/search?q={search_term_string}",
+            "target": "https://dromehusetditt.no/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
           }
         };
@@ -338,7 +337,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
           "@type": "ContactPage",
           "name": "Kontakt Oss - Drømme Huset AS",
           "description": "Kontakt Drømme Huset AS for bygg og anleggstjenester i Drammen, Lier, Svelvik og Holmestrand",
-          "url": "https://drommehuset.no/contact",
+          "url": "https://dromehusetditt.no/contact",
           "mainEntity": {
             "@type": "LocalBusiness",
             "name": "Drømme Huset AS",

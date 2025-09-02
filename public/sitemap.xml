@@ -2,103 +2,103 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://drommehuset.no/</loc>
+    <loc>https://dromehusetditt.no/</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://drommehuset.no/hero.avif</image:loc>
+      <image:loc>https://dromehusetditt.no/hero.avif</image:loc>
       <image:title>Drømme Huset AS - Bygg og Anlegg i Drammen</image:title>
       <image:caption>Profesjonelle bygg og anleggstjenester i Drammen-området</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://drommehuset.no/about</loc>
+    <loc>https://dromehusetditt.no/about</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://drommehuset.no/gallery</loc>
+    <loc>https://dromehusetditt.no/gallery</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://drommehuset.no/contact</loc>
+    <loc>https://dromehusetditt.no/contact</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://drommehuset.no/services</loc>
+    <loc>https://dromehusetditt.no/services</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://drommehuset.no/services/tomrerarbeid</loc>
+    <loc>https://dromehusetditt.no/services/tomrerarbeid</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://drommehuset.no/services/vatromsrenovering</loc>
+    <loc>https://dromehusetditt.no/services/vatromsrenovering</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://drommehuset.no/services/kjokkenrenovering</loc>
+    <loc>https://dromehusetditt.no/services/kjokkenrenovering</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://drommehuset.no/services/elektriker</loc>
+    <loc>https://dromehusetditt.no/services/elektriker</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://drommehuset.no/services/murerarbeid</loc>
+    <loc>https://dromehusetditt.no/services/murerarbeid</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://drommehuset.no/services/rorlegger</loc>
+    <loc>https://dromehusetditt.no/services/rorlegger</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://drommehuset.no/location/drammen</loc>
+    <loc>https://dromehusetditt.no/location/drammen</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://drommehuset.no/location/lier</loc>
+    <loc>https://dromehusetditt.no/location/lier</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://drommehuset.no/location/svelvik</loc>
+    <loc>https://dromehusetditt.no/location/svelvik</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://drommehuset.no/location/holmestrand</loc>
+    <loc>https://dromehusetditt.no/location/holmestrand</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://drommehuset.no/review</loc>
+    <loc>https://dromehusetditt.no/review</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

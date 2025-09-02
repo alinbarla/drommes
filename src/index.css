@@ -82,3 +82,36 @@ select:focus {
 .btn-premium:focus {
   outline: none;
 }
+
+/* Gallery Modal Mobile Optimizations */
+@media (max-width: 768px) {
+  .gallery-modal {
+    padding: 0;
+  }
+  
+  .gallery-modal .modal-content {
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    max-height: none;
+    border-radius: 0;
+  }
+  
+  .gallery-modal .modal-image {
+    max-height: calc(100vh - 200px);
+    max-width: calc(100vw - 16px);
+    object-fit: contain;
+  }
+  
+  .gallery-modal .modal-info {
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* Prevent body scroll when modal is open */
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}

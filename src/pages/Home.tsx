@@ -19,7 +19,7 @@ const Home = () => {
   const faqs = [
     {
       question: "Hvor mye koster et typisk byggeprosjekt?",
-      answer: "Kostnaden varierer betydelig basert på prosjektets omfang og kompleksitet. Et våtromsrenovering starter fra 50,000 NOK, mens større prosjekter som kjøkkenrenovering kan koste 150,000-300,000 NOK. Vi tilbyr gratis tilbud og detaljerte kostnadsoverslag for alle prosjekter."
+              answer: "Vi tilbyr gratis tilbud og detaljerte overslag for alle prosjekter. Kostnaden varierer basert på prosjektets omfang og kompleksitet. Kontakt oss for et personlig tilbud tilpasset ditt behov."
     },
     {
       question: "Hvor lang tid tar et typisk prosjekt?",
@@ -40,7 +40,6 @@ const Home = () => {
       id: 1,
       title: 'Tømrerarbeid',
       description: 'Profesjonelle tømrerarbeider med høy kvalitet og presisjon i Drammen-området. Vi leverer alt fra tak og gulv til vinduer og dører. Gratis tilbud og 5 års garanti på alle arbeider.',
-      pricing: 'Fra 25,000 NOK',
       image: '/images/tomrer/main.webp',
       category: 'Tømrer'
     },
@@ -48,7 +47,6 @@ const Home = () => {
       id: 2,
       title: 'Gravetjenester',
       description: 'Kompetent graving og grunnarbeid for alle typer prosjekter i Drammen, Lier, Svelvik og Holmestrand. Vi har egen maskinpark og erfaren operatører. Rask levering og konkurransedyktige priser.',
-      pricing: 'Fra 15,000 NOK',
       image: '/images/graving/main.webp',
       category: 'Graving'
     },
@@ -56,7 +54,6 @@ const Home = () => {
       id: 3,
       title: 'Våtrom',
       description: 'Komplette våtromsrenoveringer med moderne design og funksjonalitet. Vi bruker kun kvalitetsmaterialer og tilbyr 10 års garanti på våtromsarbeid.',
-      pricing: 'Fra 50,000 NOK',
       image: '/images/vatrom/main.webp',
       category: 'Våtrom'
     },
@@ -64,7 +61,6 @@ const Home = () => {
       id: 4,
       title: 'Murerarbeid',
       description: 'Solid murerarbeid med tradisjonelle og moderne teknikker. Vi leverer alt fra fundament til fasadearbeid. Gratis konsultasjon og detaljert tilbud.',
-      pricing: 'Fra 30,000 NOK',
       image: '/images/murer/main.webp',
       category: 'Murer'
     },
@@ -72,7 +68,6 @@ const Home = () => {
       id: 5,
       title: 'Sparkling Maling',
       description: 'Profesjonell maling og overflatebehandling for alle overflater. Vi bruker miljøvennlige produkter og tilbyr både innvendig og utvendig maling.',
-      pricing: 'Fra 8,000 NOK',
       image: '/images/maling/main.webp',
       category: 'Maling'
     },
@@ -80,7 +75,6 @@ const Home = () => {
       id: 6,
       title: 'Elektriker',
       description: 'Sikker elektrisk installasjon og vedlikehold av høy kvalitet. Vi er godkjent elektriker med alle nødvendige sertifikater. 24/7 nødhjelp tilgjengelig.',
-      pricing: 'Fra 12,000 NOK',
       image: '/images/elektriker/main.webp',
       category: 'Elektriker'
     },
@@ -88,7 +82,6 @@ const Home = () => {
       id: 7,
       title: 'Rørlegger',
       description: 'Kompetent rørleggerarbeid og sanitetssystemer. Vi leverer alt fra ny installasjon til reparasjoner. Gratis diagnose og rask respons.',
-      pricing: 'Fra 18,000 NOK',
       image: '/images/rorlegger/main.webp',
       category: 'Rørlegger'
     },
@@ -96,7 +89,6 @@ const Home = () => {
       id: 8,
       title: 'Kjøkken-møbler',
       description: 'Skreddersydde kjøkken-møbler med moderne design og funksjonalitet. Vi tilbyr gratis designkonsultasjon og leverer fra skap til komplett kjøkken.',
-      pricing: 'Fra 150,000 NOK',
       image: '/images/kjokken/main.webp',
       category: 'Kjøkken'
     },
@@ -104,7 +96,6 @@ const Home = () => {
       id: 9,
       title: 'Arkitekt',
       description: 'Profesjonell arkitekttegning og planlegging for dine byggeprosjekter. Vi hjelper deg med byggesøknader og detaljplaner. Gratis første konsultasjon.',
-      pricing: 'Fra 25,000 NOK',
       image: '/images/arkitekt/main.webp',
       category: 'Arkitekt'
     },
@@ -112,7 +103,6 @@ const Home = () => {
       id: 10,
       title: 'Salg av byggematerialer',
       description: 'Kvalitetsbyggematerialer til konkurransedyktige priser. Vi leverer direkte til byggeplass og tilbyr rabatter for større ordrer.',
-      pricing: 'Priser på forespørsel',
       image: '/images/material/main.webp',
       category: 'Materialer'
     }
@@ -127,7 +117,7 @@ const Home = () => {
       <SEO 
         title="Drømme Huset AS - Bygg og Anlegg i Drammen | Tømrer, Murer, Elektriker"
         description="Drømme Huset AS leverer profesjonelle bygg og anleggstjenester i Drammen, Lier, Svelvik og Holmestrand. Tømrer, murer, elektriker, rørlegger, våtrom og kjøkken. Over 25 års erfaring i Viken fylkeskommune."
-        url="https://drommehuset.no"
+        url="https://dromehusetditt.no"
       />
       <StructuredData 
         type="WebSite" 
@@ -188,7 +178,7 @@ const Home = () => {
               <span className="text-gold-500"> Virkelighet</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Med over 25 års erfaring som tømrere og byggmestere leverer vi håndverk av høyeste kvalitet og pålitelighet, fra start til ferdig nøkkel, for både private og bedrifter i <Link to="/location/drammen" className="text-gold-400 hover:text-gold-300 underline">Drammen</Link>, <Link to="/location/lier" className="text-gold-400 hover:text-gold-300 underline">Lier</Link>, <Link to="/location/svelvik" className="text-gold-400 hover:text-gold-300 underline">Svelvik</Link> og <Link to="/location/holmestrand" className="text-gold-400 hover:text-gold-300 underline">Holmestrand</Link>. Vi spesialiserer oss på <Link to="/services/vatromsrenovering" className="text-gold-400 hover:text-gold-300 underline">våtromsrenovering</Link>, <Link to="/services/kjokkenrenovering" className="text-gold-400 hover:text-gold-300 underline">kjøkkenrenovering</Link> og <Link to="/services/tomrerarbeid" className="text-gold-400 hover:text-gold-300 underline">tømrerarbeid</Link>.
+            Profesjonelle håndverkstjenester: Med over 20 års erfaring som tømrere og byggmestere leverer vi håndverk av høyeste kvalitet og pålitelighet, fra start til ferdig nøkkel: i Drammen, Oslo, Sandvika, Asker, Lier, Tonsberg, Kongsberg, Hoksund, Svelvik, Holmestrand, Baerum over 240 prosjekter
             </p>
             <Link
               to="/contact"
@@ -210,13 +200,7 @@ const Home = () => {
               Våre Tjenester
             </h2>
             <p className="text-xl text-puce-500 max-w-3xl mx-auto">
-              Utforsk våre omfattende tjenester innen bygg og anlegg som viser 
-              vårt engasjement for kvalitet, innovasjon og håndverk i Drammen-området. 
-              Vi leverer <Link to="/services/tomrerarbeid" className="text-gold-500 hover:text-gold-400 underline">tømrerarbeid</Link>, 
-              <Link to="/services/murerarbeid" className="text-gold-500 hover:text-gold-400 underline"> murerarbeid</Link>, 
-              <Link to="/services/elektriker" className="text-gold-500 hover:text-gold-400 underline"> elektrikerarbeid</Link> og 
-              <Link to="/services/rorlegger" className="text-gold-500 hover:text-gold-400 underline"> rørleggerarbeid</Link> til 
-              <Link to="/about" className="text-gold-500 hover:text-gold-400 underline"> lokale kunder</Link> i hele Viken fylkeskommune.
+              Vi tilbyr pålitelige og profesjonelle håndverkstjenester innen tømrer, snekkerarbeid, graver, betong, våtromsrenovering, kjøkken møbler, maler, arkitekt, elektriker, rørlegger, selger av alle byggematerialer, til lokale kunder i hele Viken, Vestfold og Telemark fylkeskommune-i Drammen-området(~100km).
             </p>
           </header>
 

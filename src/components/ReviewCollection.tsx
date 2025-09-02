@@ -105,7 +105,7 @@ const ReviewCollection = () => {
       <SEO 
         title="Skriv en anmeldelse - Drømme Huset AS | Bygg og Anlegg i Drammen"
         description="Del din opplevelse med Drømme Huset AS. Skriv en anmeldelse og hjelp andre å finne kvalitetsbygg og anleggstjenester i Drammen-området."
-        url="https://drommehuset.no/review"
+        url="https://dromehusetditt.no/review"
       />
       <StructuredData 
         type="Review" 

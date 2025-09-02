@@ -96,6 +96,13 @@ const Gallery = () => {
     };
   }, [selectedImage, allImages]);
 
+  // Cleanup body scroll when component unmounts
+  useEffect(() => {
+    return () => {
+      document.body.classList.remove('modal-open');
+    };
+  }, []);
+
   // Navigation functions for gallery popup
   const nextImage = () => {
     if (selectedImage && allImages.length > 0) {
@@ -119,11 +126,15 @@ const Gallery = () => {
     setSelectedImage(image);
     const index = allImages.findIndex(img => img.id === image.id);
     setCurrentImageIndex(index);
+    // Prevent body scroll when modal is open
+    document.body.classList.add('modal-open');
   };
 
   const closeImage = () => {
     setSelectedImage(null);
     setCurrentImageIndex(0);
+    // Restore body scroll when modal is closed
+    document.body.classList.remove('modal-open');
   };
 
   // Function to refresh images
@@ -153,7 +164,7 @@ const Gallery = () => {
       <SEO 
         title="Prosjektgalleri - Drømme Huset AS | Bygg og Anlegg i Drammen"
         description="Utforsk våre prosjekter innen bygg og anlegg i Drammen, Lier, Svelvik og Holmestrand. Tømrer, murer, elektriker, våtrom og mer. Se våre kvalitetsarbeider og profesjonelle løsninger."
-        url="https://drommehuset.no/gallery"
+        url="https://dromehusetditt.no/gallery"
       />
       <StructuredData 
         type="LocalBusiness" 
@@ -404,19 +415,19 @@ const Gallery = () => {
         {/* Modal for enlarged image */}
         {selectedImage && (
           <div 
-            className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4"
+            className="fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-50 p-2 sm:p-4 gallery-modal"
             onClick={closeImage}
           >
             <div 
-              className="relative max-w-6xl max-h-full bg-white rounded-2xl overflow-hidden"
+              className="relative w-full h-full max-w-6xl max-h-full bg-white rounded-2xl overflow-hidden flex flex-col modal-content"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close button */}
               <button
                 onClick={closeImage}
-                className="btn-premium absolute top-4 right-4 p-2 rounded-full z-10"
+                className="btn-premium absolute top-2 right-2 sm:top-4 sm:right-4 p-2 rounded-full z-10"
               >
-                <X className="h-6 w-6" />
+                <X className="h-5 w-5 sm:h-6 sm:w-6" />
               </button>
 
               {/* Navigation buttons */}
@@ -424,52 +435,58 @@ const Gallery = () => {
                 <>
                   <button
                     onClick={previousImage}
-                    className="btn-premium absolute left-4 top-1/2 transform -translate-y-1/2 p-3 rounded-full z-10"
+                    className="btn-premium absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 p-2 sm:p-3 rounded-full z-10"
                   >
-                    <ChevronLeft className="h-6 w-6" />
+                    <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
                   </button>
                   <button
                     onClick={nextImage}
-                    className="btn-premium absolute right-4 top-1/2 transform -translate-y-1/2 p-3 rounded-full z-10"
+                    className="btn-premium absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 p-2 sm:p-3 rounded-full z-10"
                   >
-                    <ChevronRight className="h-6 w-6" />
+                    <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
                   </button>
                 </>
               )}
 
-              {/* Image */}
-              <img
-                src={selectedImage.src}
-                alt={selectedImage.alt}
-                className="w-full h-auto max-h-[70vh] object-contain"
-              />
+              {/* Image Container - Fixed size on mobile */}
+              <div className="flex-1 flex items-center justify-center p-2 sm:p-4">
+                <img
+                  src={selectedImage.src}
+                  alt={selectedImage.alt}
+                  className="w-full h-full object-contain max-w-full max-h-full modal-image"
+                  style={{
+                    maxHeight: 'calc(100vh - 200px)',
+                    maxWidth: 'calc(100vw - 32px)'
+                  }}
+                />
+              </div>
 
               {/* Image info */}
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-3">
-                  <span className="btn-premium px-3 py-1 rounded-full text-sm font-medium">
-                    {selectedImage.category}
-                  </span>
+              <div className="p-3 sm:p-6 bg-white border-t border-gray-200 modal-info">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0 mb-3">
+                  <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+                    <span className="btn-premium px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
+                      {selectedImage.category}
+                    </span>
                     {selectedImage.projectName && (
-                      <span className="btn-premium px-3 py-1 rounded-full text-sm font-medium">
+                      <span className="btn-premium px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
                         {selectedImage.projectName}
                       </span>
                     )}
                   </div>
                   {allImages.length > 1 && (
-                    <span className="text-puce-500 text-sm">
+                    <span className="text-puce-500 text-xs sm:text-sm">
                       {currentImageIndex + 1} av {allImages.length}
                     </span>
                   )}
                 </div>
-                <h3 className="text-2xl font-bold text-puce-500 mb-3">
+                <h3 className="text-lg sm:text-2xl font-bold text-puce-500 mb-2 sm:mb-3">
                   {selectedImage.alt}
                 </h3>
                 {selectedImage.projectName && (
-                <p className="text-puce-500 leading-relaxed">
+                  <p className="text-puce-500 leading-relaxed text-sm sm:text-base">
                     Prosjekt: {selectedImage.projectName}
-                </p>
+                  </p>
                 )}
               </div>
             </div>

@@ -22,7 +22,7 @@ const Services = () => {
         'Utvidelser og påbygg',
         'Renovering og reparasjoner'
       ],
-      pricing: 'Fra 25,000 NOK',
+
       image: '/images/tomrer/main.webp',
       category: 'Tømrer',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand'],
@@ -41,7 +41,7 @@ const Services = () => {
         'Elektriske installasjoner',
         'Ventilasjon og oppvarming'
       ],
-      pricing: 'Fra 50,000 NOK',
+
       image: '/images/vatrom/main.webp',
       category: 'Våtrom',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand'],
@@ -60,7 +60,7 @@ const Services = () => {
         'Rørleggerarbeid',
         'Design og planlegging'
       ],
-      pricing: 'Fra 150,000 NOK',
+
       image: '/images/kjokken/main.webp',
       category: 'Kjøkken',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand'],
@@ -79,7 +79,7 @@ const Services = () => {
         'Smart hjem-teknologi',
         '24/7 nødhjelp'
       ],
-      pricing: 'Fra 12,000 NOK',
+
       image: '/images/elektriker/main.webp',
       category: 'Elektriker',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand'],
@@ -98,7 +98,7 @@ const Services = () => {
         'Reparasjoner og vedlikehold',
         'Isolasjon og tetting'
       ],
-      pricing: 'Fra 30,000 NOK',
+
       image: '/images/murer/main.webp',
       category: 'Murer',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand'],
@@ -117,7 +117,7 @@ const Services = () => {
         'Reparasjoner og vedlikehold',
         'Gulvvarme og oppvarming'
       ],
-      pricing: 'Fra 18,000 NOK',
+
       image: '/images/Rørlegger/main.webp',
       category: 'Rørlegger',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand'],
@@ -131,7 +131,7 @@ const Services = () => {
       <SEO 
         title="Våre Tjenester - Drømme Huset AS | Bygg og Anlegg i Drammen"
         description="Utforsk våre omfattende tjenester innen bygg og anlegg i Drammen, Lier, Svelvik og Holmestrand. Tømrer, murer, elektriker, rørlegger, våtrom og kjøkken. Gratis tilbud og konsultasjon."
-        url="https://drommehuset.no/services"
+        url="https://dromehusetditt.no/services"
       />
       <StructuredData 
         type="Organization" 
@@ -159,8 +159,8 @@ const Services = () => {
             areaServed: service.areas,
             offers: {
               "@type": "Offer",
-              "price": service.pricing,
-              "priceCurrency": "NOK"
+      
+              
             }
           }}
         />
@@ -232,10 +232,7 @@ const Services = () => {
                     </div>
                   </div>
                   
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-lg font-bold text-gold-500">
-                      {service.pricing}
-                    </span>
+                  <div className="flex items-center justify-center mb-4">
                     <span className="text-sm text-puce-500">
                       {service.guarantee}
                     </span>

@@ -4,24 +4,24 @@
   
   <!-- Home Page Images -->
   <url>
-    <loc>https://drommehuset.no/</loc>
+    <loc>https://dromehusetditt.no/</loc>
     <image:image>
-      <image:loc>https://drommehuset.no/hero.avif</image:loc>
+      <image:loc>https://dromehusetditt.no/hero.avif</image:loc>
       <image:title>Drømme Huset AS - Bygg og Anlegg i Drammen</image:title>
       <image:caption>Profesjonelle bygg og anleggstjenester i Drammen-området</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://drommehuset.no/images/tomrer/main.webp</image:loc>
+      <image:loc>https://dromehusetditt.no/images/tomrer/main.webp</image:loc>
       <image:title>Tømrerarbeid i Drammen - Drømme Huset AS</image:title>
       <image:caption>Profesjonelle tømrerarbeider med høy kvalitet og presisjon</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://drommehuset.no/images/vatrom/main.webp</image:loc>
+      <image:loc>https://dromehusetditt.no/images/vatrom/main.webp</image:loc>
       <image:title>Våtromsrenovering i Drammen - Drømme Huset AS</image:title>
       <image:caption>Komplette våtromsrenoveringer med moderne design</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://drommehuset.no/images/kjokken/main.webp</image:loc>
+      <image:loc>https://dromehusetditt.no/images/kjokken/main.webp</image:loc>
       <image:title>Kjøkkenrenovering i Drammen - Drømme Huset AS</image:title>
       <image:caption>Skreddersydde kjøkken-møbler med moderne design</image:caption>
     </image:image>
@@ -29,54 +29,54 @@
 
   <!-- Service Pages Images -->
   <url>
-    <loc>https://drommehuset.no/services/tomrerarbeid</loc>
+    <loc>https://dromehusetditt.no/services/tomrerarbeid</loc>
     <image:image>
-      <image:loc>https://drommehuset.no/images/tomrer/main.webp</image:loc>
+      <image:loc>https://dromehusetditt.no/images/tomrer/main.webp</image:loc>
       <image:title>Tømrerarbeid i Drammen - Profesjonelle tjenester</image:title>
       <image:caption>Tak, gulv, vinduer og dører - alt innen tømrerarbeid</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://drommehuset.no/services/vatromsrenovering</loc>
+    <loc>https://dromehusetditt.no/services/vatromsrenovering</loc>
     <image:image>
-      <image:loc>https://drommehuset.no/images/vatrom/main.webp</image:loc>
+      <image:loc>https://dromehusetditt.no/images/vatrom/main.webp</image:loc>
       <image:title>Våtromsrenovering i Drammen - Moderne design</image:title>
       <image:caption>Komplette våtromsrenoveringer med 10 års garanti</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://drommehuset.no/services/kjokkenrenovering</loc>
+    <loc>https://dromehusetditt.no/services/kjokkenrenovering</loc>
     <image:image>
-      <image:loc>https://drommehuset.no/images/kjokken/main.webp</image:loc>
+      <image:loc>https://dromehusetditt.no/images/kjokken/main.webp</image:loc>
       <image:title>Kjøkkenrenovering i Drammen - Skreddersydde løsninger</image:title>
       <image:caption>Moderne kjøkken med funksjonell design</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://drommehuset.no/services/elektriker</loc>
+    <loc>https://dromehusetditt.no/services/elektriker</loc>
     <image:image>
-      <image:loc>https://drommehuset.no/images/elektriker/main.webp</image:loc>
+      <image:loc>https://dromehusetditt.no/images/elektriker/main.webp</image:loc>
       <image:title>Elektriker i Drammen - Sikker installasjon</image:title>
       <image:caption>Godkjent elektriker med alle nødvendige sertifikater</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://drommehuset.no/services/murerarbeid</loc>
+    <loc>https://dromehusetditt.no/services/murerarbeid</loc>
     <image:image>
-      <image:loc>https://drommehuset.no/images/murer/main.webp</image:loc>
+      <image:loc>https://dromehusetditt.no/images/murer/main.webp</image:loc>
       <image:title>Murerarbeid i Drammen - Solid håndverk</image:title>
       <image:caption>Tradisjonelle og moderne murerteknikker</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://drommehuset.no/services/rorlegger</loc>
+    <loc>https://dromehusetditt.no/services/rorlegger</loc>
     <image:image>
-      <image:loc>https://drommehuset.no/images/Rørlegger/main.webp</image:loc>
+      <image:loc>https://dromehusetditt.no/images/Rørlegger/main.webp</image:loc>
       <image:title>Rørlegger i Drammen - Kompetent sanitet</image:title>
       <image:caption>Rørleggerarbeid og sanitetssystemer</image:caption>
     </image:image>
@@ -84,36 +84,36 @@
 
   <!-- Location Pages Images -->
   <url>
-    <loc>https://drommehuset.no/location/drammen</loc>
+    <loc>https://dromehusetditt.no/location/drammen</loc>
     <image:image>
-      <image:loc>https://drommehuset.no/images/tomrer/main.webp</image:loc>
+      <image:loc>https://dromehusetditt.no/images/tomrer/main.webp</image:loc>
       <image:title>Bygg og Anlegg i Drammen - Drømme Huset AS</image:title>
       <image:caption>Profesjonelle byggetjenester i Drammen sentrum og omkringliggende områder</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://drommehuset.no/location/lier</loc>
+    <loc>https://dromehusetditt.no/location/lier</loc>
     <image:image>
-      <image:loc>https://drommehuset.no/images/vatrom/main.webp</image:loc>
+      <image:loc>https://dromehusetditt.no/images/vatrom/main.webp</image:loc>
       <image:title>Bygg og Anlegg i Lier - Drømme Huset AS</image:title>
       <image:caption>Profesjonelle byggetjenester i Lier kommune</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://drommehuset.no/location/svelvik</loc>
+    <loc>https://dromehusetditt.no/location/svelvik</loc>
     <image:image>
-      <image:loc>https://drommehuset.no/images/kjokken/main.webp</image:loc>
+      <image:loc>https://dromehusetditt.no/images/kjokken/main.webp</image:loc>
       <image:title>Bygg og Anlegg i Svelvik - Drømme Huset AS</image:title>
       <image:caption>Profesjonelle byggetjenester i Svelvik kommune</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://drommehuset.no/location/holmestrand</loc>
+    <loc>https://dromehusetditt.no/location/holmestrand</loc>
     <image:image>
-      <image:loc>https://drommehuset.no/images/elektriker/main.webp</image:loc>
+      <image:loc>https://dromehusetditt.no/images/elektriker/main.webp</image:loc>
       <image:title>Bygg og Anlegg i Holmestrand - Drømme Huset AS</image:title>
       <image:caption>Profesjonelle byggetjenester i Holmestrand kommune</image:caption>
     </image:image>
@@ -121,41 +121,41 @@
 
   <!-- Gallery Page Images -->
   <url>
-    <loc>https://drommehuset.no/gallery</loc>
+    <loc>https://dromehusetditt.no/gallery</loc>
     <image:image>
-      <image:loc>https://drommehuset.no/images/tomrer/main.webp</image:loc>
-      <image:title>Tømrerarbeid Prosjekter - Drømme Huset AS</image:title>
-      <image:caption>Se våre tømrerarbeid prosjekter i Drammen-området</image:caption>
+      <image:loc>https://dromehusetditt.no/images/tomrer/main.webp</image:loc>
+      <image:title>Prosjektgalleri - Drømme Huset AS</image:title>
+      <image:caption>Utforsk våre prosjekter innen bygg og anlegg</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://drommehuset.no/images/vatrom/main.webp</image:loc>
-      <image:title>Våtromsrenovering Prosjekter - Drømme Huset AS</image:title>
-      <image:caption>Se våre våtromsrenovering prosjekter i Drammen-området</image:caption>
+      <image:loc>https://dromehusetditt.no/images/vatrom/main.webp</image:loc>
+      <image:title>Prosjektgalleri - Drømme Huset AS</image:title>
+      <image:caption>Utforsk våre prosjekter innen bygg og anlegg</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://drommehuset.no/images/kjokken/main.webp</image:loc>
-      <image:title>Kjøkkenrenovering Prosjekter - Drømme Huset AS</image:title>
-      <image:caption>Se våre kjøkkenrenovering prosjekter i Drammen-området</image:caption>
+      <image:loc>https://dromehusetditt.no/images/kjokken/main.webp</image:loc>
+      <image:title>Prosjektgalleri - Drømme Huset AS</image:title>
+      <image:caption>Utforsk våre prosjekter innen bygg og anlegg</image:caption>
     </image:image>
   </url>
 
-  <!-- Blog Images -->
+  <!-- Blog Page Images -->
   <url>
-    <loc>https://drommehuset.no/blog</loc>
+    <loc>https://dromehusetditt.no/blog</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=400&fit=crop&crop=center&auto=format&q=80</image:loc>
-      <image:title>Byggeprosjekter i Drammen 2024 - Blog</image:title>
-      <image:caption>Utforsk de mest populære byggeprosjektene i Drammen-området</image:caption>
+      <image:loc>https://dromehusetditt.no/images/tomrer/main.webp</image:loc>
+      <image:title>Blogg - Drømme Huset AS</image:title>
+      <image:caption>Nyheter og tips innen bygg og anlegg</image:caption>
     </image:image>
   </url>
 
   <!-- About Page Images -->
   <url>
-    <loc>https://drommehuset.no/about</loc>
+    <loc>https://dromehusetditt.no/about</loc>
     <image:image>
-      <image:loc>https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg</image:loc>
-      <image:title>Om Drømme Huset AS - Vår historie</image:title>
-      <image:caption>Over 25 års erfaring i byggebransjen i Drammen-området</image:caption>
+      <image:loc>https://dromehusetditt.no/images/team/erik-sivertsen.jpg</image:loc>
+      <image:title>Om Oss - Drømme Huset AS</image:title>
+      <image:caption>Lær mer om vårt team og vår historie</image:caption>
     </image:image>
   </url>
 

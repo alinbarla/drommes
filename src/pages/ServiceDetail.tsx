@@ -25,7 +25,7 @@ const ServiceDetail = () => {
         'Kjøkken og innredning',
         'Skap og møbler'
       ],
-      pricing: 'Fra 25,000 NOK',
+
       image: '/images/tomrer/main.webp',
       category: 'Tømrer',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand', 'Konnerud', 'Gulskogen', 'Åssiden', 'Bragernes'],
@@ -87,7 +87,7 @@ const ServiceDetail = () => {
         'Smart hjem-teknologi',
         'Tilgjengelighetsløsninger'
       ],
-      pricing: 'Fra 50,000 NOK',
+
       image: '/images/vatrom/main.webp',
       category: 'Våtrom',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand', 'Konnerud', 'Gulskogen', 'Åssiden', 'Bragernes'],
@@ -118,7 +118,7 @@ const ServiceDetail = () => {
       faqs: [
         {
           question: "Hvor mye koster en våtromsrenovering?",
-          answer: "Kostnaden varierer fra 50,000 NOK for små oppgraderinger til 400,000 NOK for komplette luxus-renoveringer. Vi gir alltid detaljerte tilbud."
+          answer: "Vi gir alltid detaljerte tilbud basert på prosjektets omfang og dine ønsker. Kontakt oss for et personlig tilbud tilpasset ditt behov."
         },
         {
           question: "Hvor lang tid tar en våtromsrenovering?",
@@ -149,7 +149,7 @@ const ServiceDetail = () => {
         'Oppbevaring og organisering',
         'Belysning og ventilasjon'
       ],
-      pricing: 'Fra 150,000 NOK',
+
       image: '/images/kjokken/main.webp',
       category: 'Kjøkken',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand', 'Konnerud', 'Gulskogen', 'Åssiden', 'Bragernes'],
@@ -180,7 +180,7 @@ const ServiceDetail = () => {
       faqs: [
         {
           question: "Hvor mye koster en kjøkkenrenovering?",
-          answer: "Kjøkkenrenoveringer starter fra 150,000 NOK for standard løsninger til 500,000+ NOK for luxus kjøkken. Vi tilbyr løsninger for alle budsjetter."
+          answer: "Vi tilbyr løsninger for alle budsjetter og gir alltid detaljerte tilbud basert på prosjektets omfang og dine ønsker. Kontakt oss for et personlig tilbud."
         },
         {
           question: "Hvor lang tid tar en kjøkkenrenovering?",
@@ -211,7 +211,7 @@ const ServiceDetail = () => {
         'Energieffektive løsninger',
         'Oppgradering av gamle installasjoner'
       ],
-      pricing: 'Fra 12,000 NOK',
+
       image: '/images/elektriker/main.webp',
       category: 'Elektriker',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand', 'Konnerud', 'Gulskogen', 'Åssiden', 'Bragernes'],
@@ -273,7 +273,7 @@ const ServiceDetail = () => {
         'Støttemurer og terrasser',
         'Restaurering av gamle bygninger'
       ],
-      pricing: 'Fra 30,000 NOK',
+
       image: '/images/murer/main.webp',
       category: 'Murer',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand', 'Konnerud', 'Gulskogen', 'Åssiden', 'Bragernes'],
@@ -335,7 +335,7 @@ const ServiceDetail = () => {
         'Ventilasjon og avtrekk',
         'Vannbehandling og filtrering'
       ],
-      pricing: 'Fra 18,000 NOK',
+
       image: '/images/Rørlegger/main.webp',
       category: 'Rørlegger',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand', 'Konnerud', 'Gulskogen', 'Åssiden', 'Bragernes'],
@@ -405,7 +405,7 @@ const ServiceDetail = () => {
       <SEO 
         title={`${service.title} - Drømme Huset AS | ${service.category} i Drammen`}
         description={service.description}
-        url={`https://drommehuset.no/services/${slug}`}
+        url={`https://dromehusetditt.no/services/${slug}`}
         image={service.image}
       />
       <StructuredData 
@@ -420,8 +420,8 @@ const ServiceDetail = () => {
           areaServed: service.areas,
           offers: {
             "@type": "Offer",
-            "price": service.pricing,
-            "priceCurrency": "NOK"
+                         
+                          
           }
         }}
       />
@@ -545,12 +545,12 @@ const ServiceDetail = () => {
             </div>
           </section>
 
-          {/* Pricing and CTA */}
+          {/* CTA Section */}
           <section className="mb-20">
             <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
               <h2 className="text-3xl font-bold text-puce-500 mb-4">Få ditt tilbud i dag</h2>
               <p className="text-xl text-puce-500 mb-6">
-                {service.pricing} - Gratis konsultasjon og tilbud
+                Gratis konsultasjon og tilbud
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

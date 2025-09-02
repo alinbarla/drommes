@@ -12,8 +12,8 @@ interface SEOProps {
 const SEO: React.FC<SEOProps> = ({
   title = 'Drømme Huset AS - Bygg og Anlegg | Tømrer, Murer, Elektriker',
   description = 'Drømme Huset AS leverer profesjonelle bygg og anleggstjenester. Tømrer, murer, elektriker, rørlegger og mer. Over 25 års erfaring i Norge.',
-  image = 'https://drommehuset.no/social-image.jpg',
-  url = 'https://drommehuset.no',
+  image = 'https://dromehusetditt.no/social-image.jpg',
+  url = 'https://dromehusetditt.no',
   type = 'website'
 }) => {
   const siteName = 'Drømme Huset AS';

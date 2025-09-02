@@ -83,7 +83,7 @@ const Contact = () => {
       <SEO 
         title="Kontakt Oss - Drømme Huset AS | Bygg og Anlegg i Drammen"
         description="Kontakt Drømme Huset AS for bygg og anleggstjenester i Drammen, Lier, Svelvik og Holmestrand. Gratis konsultasjon og tilbud. Ring +47 472 94 697 eller send oss en melding."
-        url="https://drommehuset.no/contact"
+        url="https://dromehusetditt.no/contact"
       />
       <StructuredData 
         type="ContactPage" 

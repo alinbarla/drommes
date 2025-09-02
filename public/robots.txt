@@ -5,11 +5,11 @@ Disallow: /api/
 Disallow: /private/
 
 # Sitemaps
-Sitemap: https://drommehuset.no/sitemap.xml
-Sitemap: https://drommehuset.no/image-sitemap.xml
+Sitemap: https://dromehusetditt.no/sitemap.xml
+Sitemap: https://dromehusetditt.no/image-sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
 
 # Host
-Host: https://drommehuset.no
+Host: https://dromehusetditt.no

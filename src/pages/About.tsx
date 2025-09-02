@@ -87,7 +87,7 @@ const About = () => {
       <SEO 
         title="Om Oss - Drømme Huset AS | Bygg og Anlegg i Drammen"
         description="Lær mer om Drømme Huset AS. Over 25 års erfaring i bygg og anlegg i Drammen, Lier, Svelvik og Holmestrand. Vi leverer kvalitet, innovasjon og pålitelige løsninger for alle dine byggeprosjekter."
-        url="https://drommehuset.no/about"
+        url="https://dromehusetditt.no/about"
       />
       <StructuredData 
         type="Organization" 
@@ -111,7 +111,7 @@ const About = () => {
           name: "Erik Sivertsen",
           jobTitle: "Grunnlegger & Byggmester",
           description: "Over 25 års erfaring i byggebransjen. Spesialist på komplekse byggeprosjekter og kvalitetskontroll.",
-          image: "https://drommehuset.no/images/team/erik-sivertsen.jpg"
+          image: "https://dromehusetditt.no/images/team/erik-sivertsen.jpg"
         }}
       />
       <StructuredData 
@@ -120,7 +120,7 @@ const About = () => {
           name: "Maria Hansen",
           jobTitle: "Prosjektleder",
           description: "Erfaren prosjektleder med fokus på kundeservice og tidsplanlegging. Sikrer at alle prosjekter leveres på tid.",
-          image: "https://drommehuset.no/images/team/maria-hansen.jpg"
+          image: "https://dromehusetditt.no/images/team/maria-hansen.jpg"
         }}
       />
       <StructuredData 
@@ -129,7 +129,7 @@ const About = () => {
           name: "Knut Johansen",
           jobTitle: "Hovedtømrer",
           description: "Mestertømrer med spesialisering på tak, gulv og vinduer. Over 20 års erfaring med kvalitetshåndverk.",
-          image: "https://drommehuset.no/images/team/knut-johansen.jpg"
+          image: "https://dromehusetditt.no/images/team/knut-johansen.jpg"
         }}
       />
       <main className="min-h-screen py-20 bg-sand-500">
