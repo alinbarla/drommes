@@ -24,16 +24,34 @@
         const twitterUrl = document.querySelector('meta[property="twitter:url"]');
         const canonical = document.querySelector('link[rel="canonical"]');
         
-        if (ogUrl) ogUrl.setAttribute('content', `https://${currentDomain}`);
-        if (ogImage) ogImage.setAttribute('content', `https://${currentDomain}/social-image-1200x630.png`);
-        if (ogImageSecure) ogImageSecure.setAttribute('content', `https://${currentDomain}/social-image-1200x630.png`);
-        if (ogImageUrl) ogImageUrl.setAttribute('content', `https://${currentDomain}/social-image-1200x630.png`);
-        if (twitterUrl) twitterUrl.setAttribute('content', `https://${currentDomain}`);
-        if (canonical) canonical.setAttribute('href', `https://${baseDomain}`);
+        // Always use the correct domain spelling for meta tags
+        const correctDomain = 'drommehusetditt.no';
+        
+        if (ogUrl) ogUrl.setAttribute('content', `https://${correctDomain}`);
+        if (ogImage) ogImage.setAttribute('content', `https://${correctDomain}/social-image-1200x630.png`);
+        if (ogImageSecure) ogImageSecure.setAttribute('content', `https://${correctDomain}/social-image-1200x630.png`);
+        if (ogImageUrl) ogImageUrl.setAttribute('content', `https://${correctDomain}/social-image-1200x630.png`);
+        if (twitterUrl) twitterUrl.setAttribute('content', `https://${correctDomain}`);
+        if (canonical) canonical.setAttribute('href', `https://${correctDomain}`);
+        
+        // Force update all og:url meta tags to ensure consistency
+        const allOgUrls = document.querySelectorAll('meta[property="og:url"]');
+        allOgUrls.forEach(tag => {
+          tag.setAttribute('content', `https://${correctDomain}`);
+        });
+        
+        // Force update all twitter:url meta tags
+        const allTwitterUrls = document.querySelectorAll('meta[property="twitter:url"]');
+        allTwitterUrls.forEach(tag => {
+          tag.setAttribute('content', `https://${correctDomain}`);
+        });
       }
       
       // Update meta tags immediately
       updateMetaTags();
+      
+      // Force update again after a short delay to ensure consistency
+      setTimeout(updateMetaTags, 10);
       
       // Redirect www to non-www after meta tags are updated
       if (isWWW) {
@@ -49,9 +67,12 @@
         const ogImageSecure = document.querySelector('meta[property="og:image:secure_url"]');
         const ogImageUrl = document.querySelector('meta[property="og:image:url"]');
         
-        if (ogImage) ogImage.setAttribute('content', `https://${currentDomain}/social-image-1200x630.png?v=${timestamp}`);
-        if (ogImageSecure) ogImageSecure.setAttribute('content', `https://${currentDomain}/social-image-1200x630.png?v=${timestamp}`);
-        if (ogImageUrl) ogImageUrl.setAttribute('content', `https://${currentDomain}/social-image-1200x630.png?v=${timestamp}`);
+        // Always use the correct domain spelling
+        const correctDomain = 'drommehusetditt.no';
+        
+        if (ogImage) ogImage.setAttribute('content', `https://${correctDomain}/social-image-1200x630.png?v=${timestamp}`);
+        if (ogImageSecure) ogImageSecure.setAttribute('content', `https://${correctDomain}/social-image-1200x630.png?v=${timestamp}`);
+        if (ogImageUrl) ogImageUrl.setAttribute('content', `https://${correctDomain}/social-image-1200x630.png?v=${timestamp}`);
       }
       
       // Add cache buster after a short delay
@@ -144,6 +165,15 @@
     <meta property="twitter:image:alt" content="Drømme Huset AS - Profesjonelle bygg og anleggstjenester i Drammen, Lier, Svelvik og Holmestrand" />
     <meta property="twitter:site" content="@drommehusetditt" />
     <meta property="twitter:creator" content="@drommehusetditt" />
+    
+    <!-- Additional meta tags for Chrome share function -->
+    <meta name="application-name" content="Drømme Huset AS" />
+    <meta name="msapplication-TileColor" content="#1E3A8A" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    
+    <!-- Critical meta tag for Chrome share function -->
+    <meta property="og:site_name" content="Drømme Huset AS" />
+    <meta property="og:url" content="https://drommehusetditt.no" />
     
     <!-- PWA Manifest -->
     <link rel="manifest" href="/manifest.json" />
@@ -328,4 +358,4 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
-</html>
+make the script to read the total number of heic to be </html>
