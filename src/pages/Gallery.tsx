@@ -471,7 +471,7 @@ const Gallery = () => {
               )}
 
               {/* Image Container - Fixed size and centered */}
-              <div className="flex-1 flex items-center justify-center p-4 modal-image-container">
+              <div className="flex-1 flex items-center justify-center p-4 sm:p-6 modal-image-container">
                 <div className="w-full h-full flex items-center justify-center">
                   <img
                     src={selectedImage.src}
@@ -489,29 +489,29 @@ const Gallery = () => {
               </div>
 
               {/* Image info - Fixed at bottom */}
-              <div className="modal-info bg-black border-t border-gray-600 p-4">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="btn-premium px-3 py-1 rounded-full text-sm font-medium">
+              <div className="modal-info bg-black border-t border-gray-600 p-3 sm:p-4">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-3 mb-2 sm:mb-3">
+                  <div className="flex flex-wrap items-center gap-1 sm:gap-2">
+                    <span className="btn-premium px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
                       {selectedImage.category}
                     </span>
                     {selectedImage.projectName && (
-                      <span className="btn-premium px-3 py-1 rounded-full text-sm font-medium">
+                      <span className="btn-premium px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
                         {selectedImage.projectName}
                       </span>
                     )}
                   </div>
                   {allImages.length > 1 && (
-                    <span className="text-white text-sm font-medium">
+                    <span className="text-white text-xs sm:text-sm font-medium">
                       {currentImageIndex + 1} av {allImages.length}
                     </span>
                   )}
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-1 sm:mb-2">
                   {selectedImage.alt}
                 </h3>
                 {selectedImage.projectName && (
-                  <p className="text-gray-300 leading-relaxed text-sm">
+                  <p className="text-gray-300 leading-relaxed text-xs sm:text-sm">
                     Prosjekt: {selectedImage.projectName}
                   </p>
                 )}
