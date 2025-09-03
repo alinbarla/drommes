@@ -17,33 +17,14 @@ const LazyImage: React.FC<LazyImageProps> = ({
   width,
   height,
   fallbackSrc = '/images/placeholder.jpg',
-  loading = 'lazy'
+  loading = 'eager'
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [isInView, setIsInView] = useState(false);
+  const [isInView, setIsInView] = useState(true);
   const [hasError, setHasError] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsInView(true);
-          observer.disconnect();
-        }
-      },
-      {
-        threshold: 0.1,
-        rootMargin: '50px'
-      }
-    );
-
-    if (imgRef.current) {
-      observer.observe(imgRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
+  // Images load instantly - no lazy loading
 
   const handleLoad = () => {
     setIsLoaded(true);

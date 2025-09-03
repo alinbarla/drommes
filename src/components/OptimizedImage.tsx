@@ -5,8 +5,7 @@ import {
   getImageOptimizationSettings,
   calculateOptimalDimensions,
   generateImagePlaceholder,
-  preloadImage,
-  createLazyImageObserver
+  preloadImage
 } from '../utils/imageUtils';
 
 interface OptimizedImageProps {
@@ -32,11 +31,11 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
   fallbackSrc,
   config = 'card',
   quality = 80,
-  lazy = true
+  lazy = false
 }) => {
   const [imageError, setImageError] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
-  const [isInView, setIsInView] = useState(!lazy || priority);
+  const [isInView, setIsInView] = useState(true);
   const imgRef = useRef<HTMLImageElement>(null);
 
   // Get optimization settings
@@ -71,29 +70,7 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
     });
   };
 
-  // Intersection Observer for lazy loading
-  useEffect(() => {
-    if (!lazy || priority || isInView) return;
-
-    const observer = createLazyImageObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsInView(true);
-          observer?.disconnect();
-        }
-      },
-      {
-        threshold: 0.1,
-        rootMargin: '50px'
-      }
-    );
-
-    if (observer && imgRef.current) {
-      observer.observe(imgRef.current);
-    }
-
-    return () => observer?.disconnect();
-  }, [lazy, priority, isInView]);
+  // Images load instantly - no lazy loading
 
   // Preload critical images
   useEffect(() => {
@@ -149,7 +126,7 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
             alt={alt}
             width={width}
             height={height}
-            loading={priority ? 'eager' : 'lazy'}
+            loading="eager"
             decoding={priority ? 'sync' : 'async'}
             onError={handleImageError}
             onLoad={handleImageLoad}

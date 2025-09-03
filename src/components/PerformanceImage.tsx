@@ -19,7 +19,7 @@ const PerformanceImage: React.FC<PerformanceImageProps> = ({
   className = '',
   width,
   height,
-  loading = 'lazy',
+  loading = 'eager',
   priority = false,
   fallbackSrc = '/images/placeholder.jpg',
   onLoad,
@@ -28,39 +28,17 @@ const PerformanceImage: React.FC<PerformanceImageProps> = ({
   const [imageSrc, setImageSrc] = useState<string>(priority ? src : '');
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
-  const [isInView, setIsInView] = useState(priority);
+  const [isInView, setIsInView] = useState(true);
   const imgRef = useRef<HTMLImageElement>(null);
   const observerRef = useRef<IntersectionObserver | null>(null);
 
-  // Intersection Observer for lazy loading
+  // Images load instantly - no lazy loading
   useEffect(() => {
-    if (priority || !imgRef.current) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsInView(true);
-            setImageSrc(src);
-            observer.disconnect();
-          }
-        });
-      },
-      {
-        rootMargin: '50px 0px', // Start loading 50px before image comes into view
-        threshold: 0.1
-      }
-    );
-
-    observerRef.current = observer;
-    observer.observe(imgRef.current);
-
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-      }
-    };
-  }, [src, priority]);
+    if (!isInView) {
+      setIsInView(true);
+      setImageSrc(src);
+    }
+  }, [src]);
 
   // Handle image load
   const handleLoad = useCallback(() => {
@@ -90,14 +68,7 @@ const PerformanceImage: React.FC<PerformanceImageProps> = ({
     }
   }, [priority, src, handleLoad, handleError]);
 
-  // Cleanup observer on unmount
-  useEffect(() => {
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-      }
-    };
-  }, []);
+  // No observer cleanup needed - no lazy loading
 
   return (
     <div 

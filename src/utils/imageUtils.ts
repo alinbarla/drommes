@@ -240,25 +240,7 @@ export const getImageOptimizationSettings = (
   };
 };
 
-/**
- * Create intersection observer for lazy loading
- */
-export const createLazyImageObserver = (
-  callback: (entries: IntersectionObserverEntry[]) => void,
-  options: IntersectionObserverInit = {}
-): IntersectionObserver | null => {
-  if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
-    return null;
-  }
-  
-  const defaultOptions: IntersectionObserverInit = {
-    rootMargin: '50px',
-    threshold: 0.1,
-    ...options
-  };
-  
-  return new IntersectionObserver(callback, defaultOptions);
-};
+// Lazy loading removed - images load instantly
 
 /**
  * Debounce function for performance optimization

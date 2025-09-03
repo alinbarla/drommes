@@ -265,7 +265,7 @@ const Gallery = () => {
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                   width={400}
                   height={256}
-                  loading="lazy"
+                  loading="eager"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                 <div className="absolute top-4 left-4">
@@ -308,7 +308,7 @@ const Gallery = () => {
                       className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                       width={400}
                       height={256}
-                      loading="lazy"
+                      loading="eager"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                     <div className="absolute bottom-4 left-4 right-4">

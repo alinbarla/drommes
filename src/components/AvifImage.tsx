@@ -17,7 +17,7 @@ const AvifImage: React.FC<AvifImageProps> = ({
   className = '',
   width,
   height,
-  loading = 'lazy',
+  loading = 'eager',
   sizes,
   fallback
 }) => {

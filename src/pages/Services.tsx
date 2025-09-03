@@ -192,7 +192,7 @@ const Services = () => {
                     src={service.image}
                     alt={`${service.title} - ${service.description.substring(0, 50)}...`}
                     className="w-full h-64 object-cover"
-                    loading="lazy"
+                    loading="eager"
                     width="400"
                     height="256"
                   />
