@@ -405,7 +405,7 @@ const ServiceDetail = () => {
       <SEO 
         title={`${service.title} - Drømme Huset AS | ${service.category} i Drammen`}
         description={service.description}
-        url={`https://dromehusetditt.no/services/${slug}`}
+        url={`https://drommehusetditt.no/services/${slug}`}
         image={service.image}
       />
       <StructuredData 

@@ -131,7 +131,7 @@ const Services = () => {
       <SEO 
         title="Våre Tjenester - Drømme Huset AS | Bygg og Anlegg i Drammen"
         description="Utforsk våre omfattende tjenester innen bygg og anlegg i Drammen, Lier, Svelvik og Holmestrand. Tømrer, murer, elektriker, rørlegger, våtrom og kjøkken. Gratis tilbud og konsultasjon."
-        url="https://dromehusetditt.no/services"
+        url="https://drommehusetditt.no/services"
       />
       <StructuredData 
         type="Organization" 

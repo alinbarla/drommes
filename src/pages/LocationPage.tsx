@@ -137,14 +137,14 @@ const LocationPage = () => {
       <SEO 
         title={`Bygg og Anlegg i ${locationData.fullName} - Drømme Huset AS | ${locationData.name}`}
         description={`Profesjonelle bygg og anleggstjenester i ${locationData.fullName}. Tømrer, murer, elektriker, rørlegger, våtrom og kjøkken. Over 25 års erfaring i ${locationData.name}.`}
-        url={`https://dromehusetditt.no/location/${location}`}
+        url={`https://drommehusetditt.no/location/${location}`}
       />
       <StructuredData 
         type="LocalBusiness" 
         data={{
           name: `Drømme Huset AS - ${locationData.fullName}`,
           description: `Profesjonelle bygg og anleggstjenester i ${locationData.fullName}`,
-          url: `https://dromehusetditt.no/location/${location}`,
+          url: `https://drommehusetditt.no/location/${location}`,
           telephone: "+4747294697",
           email: "drammenbygg@gmail.com",
           address: {

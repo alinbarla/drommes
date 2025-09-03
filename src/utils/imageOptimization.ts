@@ -21,8 +21,8 @@ export const RESPONSIVE_CONFIGS = {
       { width: 1200, height: 900, quality: 75 },
       { width: 1920, height: 1080, quality: 70 }
     ],
-    formats: ['avif', 'webp', 'jpg'],
-    fallbackFormat: 'jpg' as const
+    formats: ['avif'],
+    fallbackFormat: 'avif' as const
   },
   thumbnail: {
     sizes: [
@@ -30,8 +30,8 @@ export const RESPONSIVE_CONFIGS = {
       { width: 400, height: 300, quality: 80 },
       { width: 600, height: 450, quality: 75 }
     ],
-    formats: ['webp', 'jpg'],
-    fallbackFormat: 'jpg' as const
+    formats: ['avif'],
+    fallbackFormat: 'avif' as const
   },
   gallery: {
     sizes: [
@@ -40,8 +40,8 @@ export const RESPONSIVE_CONFIGS = {
       { width: 900, height: 600, quality: 75 },
       { width: 1200, height: 800, quality: 70 }
     ],
-    formats: ['webp', 'jpg'],
-    fallbackFormat: 'jpg' as const
+    formats: ['avif'],
+    fallbackFormat: 'avif' as const
   },
   card: {
     sizes: [
@@ -49,8 +49,8 @@ export const RESPONSIVE_CONFIGS = {
       { width: 600, height: 384, quality: 80 },
       { width: 800, height: 512, quality: 75 }
     ],
-    formats: ['webp', 'jpg'],
-    fallbackFormat: 'jpg' as const
+    formats: ['avif'],
+    fallbackFormat: 'avif' as const
   }
 } as const;
 

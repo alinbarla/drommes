@@ -21,7 +21,7 @@ const PerformanceImage: React.FC<PerformanceImageProps> = ({
   height,
   loading = 'eager',
   priority = false,
-  fallbackSrc = '/images/placeholder.jpg',
+  fallbackSrc = '/images/placeholder.avif',
   onLoad,
   onError
 }) => {

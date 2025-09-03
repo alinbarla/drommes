@@ -110,15 +110,9 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
         <picture>
           {/* AVIF source for modern browsers */}
           <source
-            srcSet={srcSet.replace(/f=webp/g, 'f=avif')}
-            sizes={sizes}
-            type="image/avif"
-          />
-          {/* WebP source for good browser support */}
-          <source
             srcSet={srcSet}
             sizes={sizes}
-            type="image/webp"
+            type="image/avif"
           />
           {/* Fallback image */}
           <img

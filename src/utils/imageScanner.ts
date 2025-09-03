@@ -182,10 +182,10 @@ export const getCategoryThumbnail = async (category: string): Promise<string> =>
     
     // Fallback to a default image
     console.log(`⚠️ No images found, using placeholder`);
-    return '/images/placeholder.jpg';
+    return '/images/placeholder.avif';
   } catch (error) {
     console.error('Error getting category thumbnail:', error);
-    return '/images/placeholder.jpg';
+    return '/images/placeholder.avif';
   }
 };
 
@@ -444,18 +444,18 @@ const getStaticCategoryData = (category: string): CategoryData => {
       category: 'Materialer',
       projects: [],
       individualImages: [
-        { id: 'material-1', src: '/images/material/1344258.webp', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-2', src: '/images/material/16085_2B16087-1_236f6aedd4-bdb6-4715-92a2-52062958133c_1.webp', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-3', src: '/images/material/20536_1.webp', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-4', src: '/images/material/08419148_1.webp', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-5', src: '/images/material/08148048_2.jpg', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-6', src: '/images/material/08148098_2.jpg', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-7', src: '/images/material/08748148_4.jpg', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-8', src: '/images/material/08736048_6.jpg', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-9', src: '/images/material/terrasse bord2.webp', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-10', src: '/images/material/terrasse bord.jpg', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-11', src: '/images/material/OSB-TG2_4.webp', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-12', src: '/images/material/perdangos-plokstes-hcs-200.jpg', alt: 'Byggematerialer', category: 'Materialer' }
+        { id: 'material-1', src: '/images/material/1344258.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-2', src: '/images/material/16085_2B16087-1_236f6aedd4-bdb6-4715-92a2-52062958133c_1.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-3', src: '/images/material/20536_1.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-4', src: '/images/material/08419148_1.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-5', src: '/images/material/08148048_2.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-6', src: '/images/material/08148098_2.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-7', src: '/images/material/08748148_4.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-8', src: '/images/material/08736048_6.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-9', src: '/images/material/terrasse bord2.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-10', src: '/images/material/terrasse bord.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-11', src: '/images/material/OSB-TG2_4.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-12', src: '/images/material/perdangos-plokstes-hcs-200.avif', alt: 'Byggematerialer', category: 'Materialer' }
       ]
     }
   };

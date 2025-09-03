@@ -1,0 +1,749 @@
+{
+  "version": "2.0.0",
+  "format": "AVIF",
+  "outputFormat": "single",
+  "generated": "2025-09-03T12:03:21.872Z",
+  "totalImages": 162,
+  "totalOriginalSize": null,
+  "totalAvifSize": 62382793,
+  "compressionStats": {
+    "averageCompression": 0,
+    "totalSavings": null
+  },
+  "deletionStats": {
+    "totalDeleted": 146,
+    "totalSpaceFreed": null
+  },
+  "config": {
+    "quality": {
+      "hero": 75,
+      "card": 80,
+      "thumbnail": 85,
+      "gallery": 80,
+      "default": 80
+    },
+    "avifSettings": {
+      "effort": 6,
+      "chromaSubsampling": "4:2:0",
+      "lossless": false
+    },
+    "outputFormat": "single"
+  },
+  "images": {
+    "1344258": {
+      "avifSize": 23731,
+      "originalDeleted": false,
+      "path": "/images/material/1344258.avif"
+    },
+    "49625498": {
+      "avifSize": 74759,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomer terrasse/49625498.avif"
+    },
+    "main": {
+      "avifSize": 78803,
+      "originalDeleted": false,
+      "path": "/images/vatrom/main.avif"
+    },
+    "5bf869c3-36ff-462c-a225-a63e1a11554f": {
+      "avifSize": 118437,
+      "originalDeleted": false,
+      "path": "/images/maler/5bf869c3-36ff-462c-a225-a63e1a11554f.avif"
+    },
+    "08419148_1": {
+      "avifSize": 28366,
+      "originalDeleted": false,
+      "path": "/images/material/08419148_1.avif"
+    },
+    "20536_1": {
+      "avifSize": 49987,
+      "originalDeleted": false,
+      "path": "/images/material/20536_1.avif"
+    },
+    "OSB-TG2_4": {
+      "avifSize": 26149,
+      "originalDeleted": false,
+      "path": "/images/material/OSB-TG2_4.avif"
+    },
+    "terrasse bord2": {
+      "avifSize": 31532,
+      "originalDeleted": false,
+      "path": "/images/material/terrasse bord2.avif"
+    },
+    "fasadas langai tamsoi": {
+      "avifSize": 40467,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/fasadas langai tamsoi.avif"
+    },
+    "fasadas tamsoi": {
+      "avifSize": 47821,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/fasadas tamsoi.avif"
+    },
+    "fasadas tamsoi1": {
+      "avifSize": 26228,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/fasadas tamsoi1.avif"
+    },
+    "fasadas": {
+      "avifSize": 55627,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/fasadas.avif"
+    },
+    "fasadas1": {
+      "avifSize": 45377,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/fasadas1.avif"
+    },
+    "fasadas2 hyte": {
+      "avifSize": 68888,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/fasadas2 hyte.avif"
+    },
+    "h0": {
+      "avifSize": 45254,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/h0.avif"
+    },
+    "h1": {
+      "avifSize": 20198,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/h1.avif"
+    },
+    "h3": {
+      "avifSize": 41049,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/h3.avif"
+    },
+    "h4": {
+      "avifSize": 48746,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/h4.avif"
+    },
+    "h5": {
+      "avifSize": 55229,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/h5.avif"
+    },
+    "h6": {
+      "avifSize": 100041,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/h6.avif"
+    },
+    "h7": {
+      "avifSize": 46581,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/h7.avif"
+    },
+    "h8": {
+      "avifSize": 50468,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/h8.avif"
+    },
+    "h9": {
+      "avifSize": 75680,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/h9.avif"
+    },
+    "ht1": {
+      "avifSize": 53334,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/ht1.avif"
+    },
+    "ht2": {
+      "avifSize": 56612,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/ht2.avif"
+    },
+    "hyte 14": {
+      "avifSize": 90968,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte 14.avif"
+    },
+    "hyte 15": {
+      "avifSize": 52072,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte 15.avif"
+    },
+    "hyte 17": {
+      "avifSize": 99238,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte 17.avif"
+    },
+    "hyte 18 fasadas": {
+      "avifSize": 101986,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte 18 fasadas.avif"
+    },
+    "hyte 19": {
+      "avifSize": 89743,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte 19.avif"
+    },
+    "hyte1": {
+      "avifSize": 63459,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte1.avif"
+    },
+    "hyte10": {
+      "avifSize": 34635,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte10.avif"
+    },
+    "hyte11": {
+      "avifSize": 99423,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte11.avif"
+    },
+    "hyte12": {
+      "avifSize": 54271,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte12.avif"
+    },
+    "hyte13": {
+      "avifSize": 97659,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte13.avif"
+    },
+    "hyte15": {
+      "avifSize": 79262,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte15.avif"
+    },
+    "hyte2": {
+      "avifSize": 70582,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte2.avif"
+    },
+    "hyte21": {
+      "avifSize": 81089,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte21.avif"
+    },
+    "hyte3": {
+      "avifSize": 73988,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte3.avif"
+    },
+    "hyte4": {
+      "avifSize": 85538,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte4.avif"
+    },
+    "hyte5": {
+      "avifSize": 87232,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte5.avif"
+    },
+    "hyte6": {
+      "avifSize": 70097,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte6.avif"
+    },
+    "hyte7": {
+      "avifSize": 52984,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte7.avif"
+    },
+    "hyte8": {
+      "avifSize": 103898,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte8.avif"
+    },
+    "hyte9": {
+      "avifSize": 69700,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hyte9.avif"
+    },
+    "hytte visa": {
+      "avifSize": 80759,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hytte visa.avif"
+    },
+    "hytte visa1": {
+      "avifSize": 102711,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/hytte visa1.avif"
+    },
+    "lekter stog": {
+      "avifSize": 103988,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/lekter stog.avif"
+    },
+    "lekter": {
+      "avifSize": 2037288,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer tak/lekter.avif"
+    },
+    "lekter1": {
+      "avifSize": 62593,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/lekter1.avif"
+    },
+    "lekter2": {
+      "avifSize": 75277,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/lekter2.avif"
+    },
+    "sniegas": {
+      "avifSize": 49017,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/sniegas.avif"
+    },
+    "sniegas2": {
+      "avifSize": 57267,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/sniegas2.avif"
+    },
+    "stogas hyte": {
+      "avifSize": 83533,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/stogas hyte.avif"
+    },
+    "stogas lekter": {
+      "avifSize": 48944,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\hytte tomrer/stogas lekter.avif"
+    },
+    "DSC_8911": {
+      "avifSize": 1484072,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/DSC_8911.avif"
+    },
+    "DSC_8913": {
+      "avifSize": 2838548,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/DSC_8913.avif"
+    },
+    "DSC_8914": {
+      "avifSize": 1520992,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/DSC_8914.avif"
+    },
+    "DSC_8915": {
+      "avifSize": 1769568,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/DSC_8915.avif"
+    },
+    "DSC_8916": {
+      "avifSize": 1995480,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/DSC_8916.avif"
+    },
+    "DSC_8918": {
+      "avifSize": 1520323,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/DSC_8918.avif"
+    },
+    "DSC_8919": {
+      "avifSize": 2394633,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/DSC_8919.avif"
+    },
+    "DSC_8920": {
+      "avifSize": 2724952,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/DSC_8920.avif"
+    },
+    "s11": {
+      "avifSize": 67606,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s11.avif"
+    },
+    "s13": {
+      "avifSize": 154752,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s13.avif"
+    },
+    "s14": {
+      "avifSize": 65500,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s14.avif"
+    },
+    "s144": {
+      "avifSize": 53143,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s144.avif"
+    },
+    "s16": {
+      "avifSize": 28946,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s16.avif"
+    },
+    "s17": {
+      "avifSize": 25129,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s17.avif"
+    },
+    "s18": {
+      "avifSize": 69267,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s18.avif"
+    },
+    "s19": {
+      "avifSize": 39867,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s19.avif"
+    },
+    "s2": {
+      "avifSize": 60877,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s2.avif"
+    },
+    "s20": {
+      "avifSize": 63792,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s20.avif"
+    },
+    "s21": {
+      "avifSize": 98619,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s21.avif"
+    },
+    "s3": {
+      "avifSize": 124800,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s3.avif"
+    },
+    "s4": {
+      "avifSize": 67669,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s4.avif"
+    },
+    "s5": {
+      "avifSize": 134909,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s5.avif"
+    },
+    "s6": {
+      "avifSize": 71165,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s6.avif"
+    },
+    "s8": {
+      "avifSize": 70567,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s8.avif"
+    },
+    "s9": {
+      "avifSize": 125555,
+      "originalDeleted": true,
+      "path": "/images/tomrer/s9.avif"
+    },
+    "stogas": {
+      "avifSize": 65292,
+      "originalDeleted": true,
+      "path": "/images/tomrer/stogas.avif"
+    },
+    "tjyuj": {
+      "avifSize": 1769568,
+      "originalDeleted": true,
+      "path": "/images/tomrer/tjyuj.avif"
+    },
+    "lai0pt": {
+      "avifSize": 94659,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomer terrasse/lai0pt.avif"
+    },
+    "t2": {
+      "avifSize": 85384,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomer terrasse/t2.avif"
+    },
+    "t3": {
+      "avifSize": 89196,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomer terrasse/t3.avif"
+    },
+    "t4": {
+      "avifSize": 119004,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomer terrasse/t4.avif"
+    },
+    "ter1": {
+      "avifSize": 99657,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomer terrasse/ter1.avif"
+    },
+    "492783074_122095938086900552_8092561260531508039_n": {
+      "avifSize": 116169,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/492783074_122095938086900552_8092561260531508039_n.avif"
+    },
+    "493074921_122095938656900552_1750259903540017634_n": {
+      "avifSize": 129847,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/493074921_122095938656900552_1750259903540017634_n.avif"
+    },
+    "495953147_122095938290900552_6102852969139254234_n": {
+      "avifSize": 81869,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/495953147_122095938290900552_6102852969139254234_n.avif"
+    },
+    "496060259_122095938536900552_7121926362269252034_n": {
+      "avifSize": 156851,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/496060259_122095938536900552_7121926362269252034_n.avif"
+    },
+    "499709250_122095938248900552_5749772008217005801_n": {
+      "avifSize": 164885,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/499709250_122095938248900552_5749772008217005801_n.avif"
+    },
+    "502562666_122095938182900552_5498421954598565458_n": {
+      "avifSize": 206153,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/502562666_122095938182900552_5498421954598565458_n.avif"
+    },
+    "502664304_122095938614900552_1103660347583242030_n": {
+      "avifSize": 128834,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/502664304_122095938614900552_1103660347583242030_n.avif"
+    },
+    "DSC_8922": {
+      "avifSize": 1370658,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/DSC_8922.avif"
+    },
+    "DSC_8926": {
+      "avifSize": 1428698,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/DSC_8926.avif"
+    },
+    "DSC_8927": {
+      "avifSize": 1212075,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer fasader/DSC_8927.avif"
+    },
+    "5658d317-12cd-47bc-97f8-68a7d5e2e36a": {
+      "avifSize": 84795,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer skole/5658d317-12cd-47bc-97f8-68a7d5e2e36a.avif"
+    },
+    "20250626_082022": {
+      "avifSize": 2350276,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer tak/20250626_082022.avif"
+    },
+    "491685505_122096068478900552_1626564794516631449_n": {
+      "avifSize": 124800,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer tak/491685505_122096068478900552_1626564794516631449_n.avif"
+    },
+    "494862513_122096068646900552_4337176891699261967_n": {
+      "avifSize": 134909,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer tak/494862513_122096068646900552_4337176891699261967_n.avif"
+    },
+    "496532372_122096069006900552_4662197134514818158_n": {
+      "avifSize": 154752,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer tak/496532372_122096069006900552_4662197134514818158_n.avif"
+    },
+    "501050929_122096069432900552_7670098889317382612_n": {
+      "avifSize": 65292,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer tak/501050929_122096069432900552_7670098889317382612_n.avif"
+    },
+    "502583105_122096068814900552_1451567515785290050_n": {
+      "avifSize": 70567,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer tak/502583105_122096068814900552_1451567515785290050_n.avif"
+    },
+    "502673823_122096068832900552_4631253639595296095_n": {
+      "avifSize": 67606,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer tak/502673823_122096068832900552_4631253639595296095_n.avif"
+    },
+    "502676446_122095938128900552_5259261791501030175_n": {
+      "avifSize": 206132,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer tak/502676446_122095938128900552_5259261791501030175_n.avif"
+    },
+    "502716142_122096068634900552_2451395755400687963_n": {
+      "avifSize": 71165,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer tak/502716142_122096068634900552_2451395755400687963_n.avif"
+    },
+    "503567212_122096068616900552_6873861091505371410_n": {
+      "avifSize": 67669,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer tak/503567212_122096068616900552_6873861091505371410_n.avif"
+    },
+    "takstein": {
+      "avifSize": 2856023,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer tak/takstein.avif"
+    },
+    "takstein1": {
+      "avifSize": 2751773,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer tak/takstein1.avif"
+    },
+    "hyte20": {
+      "avifSize": 50655,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/hyte20.avif"
+    },
+    "terasa 6": {
+      "avifSize": 76402,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/terasa 6.avif"
+    },
+    "terasa10": {
+      "avifSize": 101005,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/terasa10.avif"
+    },
+    "terasa11cool": {
+      "avifSize": 99065,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/terasa11cool.avif"
+    },
+    "terasa12cool": {
+      "avifSize": 80350,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/terasa12cool.avif"
+    },
+    "terasa13col": {
+      "avifSize": 98397,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/terasa13col.avif"
+    },
+    "terasa14col": {
+      "avifSize": 107165,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/terasa14col.avif"
+    },
+    "terasa15": {
+      "avifSize": 122038,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/terasa15.avif"
+    },
+    "terasa17": {
+      "avifSize": 103032,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/terasa17.avif"
+    },
+    "terasa2": {
+      "avifSize": 84842,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/terasa2.avif"
+    },
+    "terasa3": {
+      "avifSize": 110003,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/terasa3.avif"
+    },
+    "terasa4": {
+      "avifSize": 133051,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/terasa4.avif"
+    },
+    "terasa5": {
+      "avifSize": 110727,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/terasa5.avif"
+    },
+    "terasa7": {
+      "avifSize": 103389,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/terasa7.avif"
+    },
+    "terasa8": {
+      "avifSize": 86078,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/terasa8.avif"
+    },
+    "terasa9": {
+      "avifSize": 79086,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/terasa9.avif"
+    },
+    "terassa": {
+      "avifSize": 130985,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer terrasse/terassa.avif"
+    },
+    "l11": {
+      "avifSize": 79183,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer trappa/l11.avif"
+    },
+    "l12": {
+      "avifSize": 80235,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer trappa/l12.avif"
+    },
+    "l3": {
+      "avifSize": 65976,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer trappa/l3.avif"
+    },
+    "l4": {
+      "avifSize": 40586,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer trappa/l4.avif"
+    },
+    "l5": {
+      "avifSize": 60098,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer trappa/l5.avif"
+    },
+    "l6": {
+      "avifSize": 59404,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer trappa/l6.avif"
+    },
+    "l7": {
+      "avifSize": 81907,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer trappa/l7.avif"
+    },
+    "l8": {
+      "avifSize": 68082,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer trappa/l8.avif"
+    },
+    "l9": {
+      "avifSize": 65563,
+      "originalDeleted": true,
+      "path": "/images/tomrer\\tomrer trappa/l9.avif"
+    },
+    "0353fd81-ddc2-4133-b619-7d9fdebc263c": {
+      "avifSize": 39145,
+      "originalDeleted": true,
+      "path": "/images/vatrom/0353fd81-ddc2-4133-b619-7d9fdebc263c.avif"
+    },
+    "051eafda-7377-49c1-bea5-38cb4b5ebe0d": {
+      "avifSize": 87962,
+      "originalDeleted": false,
+      "path": "/images/vatrom/051eafda-7377-49c1-bea5-38cb4b5ebe0d.avif"
+    },
+    "495855490_122095985270900552_8411948747538452232_n": {
+      "avifSize": 84739,
+      "originalDeleted": true,
+      "path": "/images/vatrom/495855490_122095985270900552_8411948747538452232_n.avif"
+    },
+    "502527885_122095985720900552_1837436725184916945_n": {
+      "avifSize": 211007,
+      "originalDeleted": true,
+      "path": "/images/vatrom/502527885_122095985720900552_1837436725184916945_n.avif"
+    },
+    "502537676_122095971158900552_5972748688497357272_n": {
+      "avifSize": 56927,
+      "originalDeleted": true,
+      "path": "/images/vatrom/502537676_122095971158900552_5972748688497357272_n.avif"
+    },
+    "502710972_122095985354900552_6980517728070742980_n": {
+      "avifSize": 101290,
+      "originalDeleted": true,
+      "path": "/images/vatrom/502710972_122095985354900552_6980517728070742980_n.avif"
+    },
+    "9be67488-5fff-409b-a3e0-8ceb4cce9b44": {
+      "avifSize": 74419,
+      "originalDeleted": true,
+      "path": "/images/vatrom/9be67488-5fff-409b-a3e0-8ceb4cce9b44.avif"
+    }
+  }
+}

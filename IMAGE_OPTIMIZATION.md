@@ -119,10 +119,9 @@ npm run optimize
 
 ## Image Formats Supported
 
-1. **AVIF** - Best compression, modern browsers
-2. **WebP** - Good compression, wide support
-3. **JPEG** - Fallback for older browsers
-4. **PNG** - For images requiring transparency
+1. **AVIF** - Primary format, best compression, modern browsers
+2. **JPEG** - Fallback for older browsers (auto-converted from AVIF)
+3. **PNG** - For images requiring transparency (auto-converted from AVIF)
 
 ## Responsive Breakpoints
 
@@ -139,9 +138,9 @@ npm run optimize
 
 ## Browser Support
 
-- **Modern browsers**: AVIF + WebP
-- **Older browsers**: WebP + JPEG fallback
-- **Very old browsers**: JPEG only
+- **Modern browsers**: AVIF images (primary)
+- **Older browsers**: Automatic fallback to original format
+- **Fallback strategy**: Seamless degradation with error handling
 
 ## Monitoring
 

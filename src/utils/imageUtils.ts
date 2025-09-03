@@ -36,7 +36,7 @@ export const getOptimizedImageUrl = (
     width = 800,
     height = 600,
     quality = QUALITY_PRESETS.default,
-    format = 'webp',
+    format = 'avif',
     devicePixelRatio = 1
   } = options;
 
@@ -103,14 +103,14 @@ export const generateResponsiveImageSources = (
     const aspectRatio = baseHeight / baseWidth;
     const height = Math.round(breakpoint.width * aspectRatio);
     
-    // Generate WebP source
-    const webpUrl = getOptimizedImageUrl(src, {
+    // Generate AVIF source
+    const avifUrl = getOptimizedImageUrl(src, {
       width: breakpoint.width,
       height,
       quality,
-      format: 'webp'
+      format: 'avif'
     });
-    srcSetParts.push(`${webpUrl} ${breakpoint.width}w`);
+    srcSetParts.push(`${avifUrl} ${breakpoint.width}w`);
     
     // Generate sizes attribute
     if (index === 0) {

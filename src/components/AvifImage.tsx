@@ -28,7 +28,7 @@ const AvifImage: React.FC<AvifImageProps> = ({
     }
     
     // Remove existing extension and add .avif
-    const baseName = imageSrc.replace(/\.(jpg|jpeg|png|webp|gif|tiff|bmp)$/i, '');
+    const baseName = imageSrc.replace(/\.(jpg|jpeg|png|webp|gif|tiff|bmp|heic)$/i, '');
     return `${baseName}.avif`;
   };
 

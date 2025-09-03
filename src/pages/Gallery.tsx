@@ -164,7 +164,7 @@ const Gallery = () => {
       <SEO 
         title="Prosjektgalleri - Drømme Huset AS | Bygg og Anlegg i Drammen"
         description="Utforsk våre prosjekter innen bygg og anlegg i Drammen, Lier, Svelvik og Holmestrand. Tømrer, murer, elektriker, våtrom og mer. Se våre kvalitetsarbeider og profesjonelle løsninger."
-        url="https://dromehusetditt.no/gallery"
+        url="https://drommehusetditt.no/gallery"
       />
       <StructuredData 
         type="LocalBusiness" 
@@ -179,7 +179,7 @@ const Gallery = () => {
           <StructuredData 
             type="ImageObject" 
             data={{ 
-              url: categoryData.projects[0]?.images[0]?.src || '/images/placeholder.jpg',
+              url: categoryData.projects[0]?.images[0]?.src || '/images/placeholder.avif',
               description: `${selectedCategory} prosjekt fra Drømme Huset AS`,
               name: `${selectedCategory} - Drømme Huset AS`
             }}

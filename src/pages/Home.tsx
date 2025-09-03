@@ -223,7 +223,7 @@ const Home = () => {
                     width={400}
                     height={256}
                     priority={project.id <= 3}
-                    fallbackSrc="/images/placeholder.jpg"
+                    fallbackSrc="/images/placeholder.avif"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                   <div className="absolute top-4 left-4">

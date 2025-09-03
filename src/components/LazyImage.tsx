@@ -16,7 +16,7 @@ const LazyImage: React.FC<LazyImageProps> = ({
   className = '',
   width,
   height,
-  fallbackSrc = '/images/placeholder.jpg',
+  fallbackSrc = '/images/placeholder.avif',
   loading = 'eager'
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
