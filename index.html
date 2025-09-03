@@ -8,11 +8,54 @@
     <!-- Canonical URL to prevent duplicate content -->
     <link rel="canonical" href="https://drommehusetditt.no" />
     
-    <!-- Redirect www to non-www -->
+    <!-- Handle both www and non-www domains for social media -->
     <script>
-      if (window.location.hostname === 'www.drommehusetditt.no') {
-        window.location.href = window.location.href.replace('www.drommehusetditt.no', 'drommehusetditt.no');
+      // Get current domain for dynamic meta tag generation
+      const currentDomain = window.location.hostname;
+      const isWWW = currentDomain === 'www.drommehusetditt.no';
+      const baseDomain = 'drommehusetditt.no';
+      
+      // Update meta tags dynamically based on current domain
+      function updateMetaTags() {
+        const ogUrl = document.querySelector('meta[property="og:url"]');
+        const ogImage = document.querySelector('meta[property="og:image"]');
+        const ogImageSecure = document.querySelector('meta[property="og:image:secure_url"]');
+        const ogImageUrl = document.querySelector('meta[property="og:image:url"]');
+        const twitterUrl = document.querySelector('meta[property="twitter:url"]');
+        const canonical = document.querySelector('link[rel="canonical"]');
+        
+        if (ogUrl) ogUrl.setAttribute('content', `https://${currentDomain}`);
+        if (ogImage) ogImage.setAttribute('content', `https://${currentDomain}/social-image-1200x630.png`);
+        if (ogImageSecure) ogImageSecure.setAttribute('content', `https://${currentDomain}/social-image-1200x630.png`);
+        if (ogImageUrl) ogImageUrl.setAttribute('content', `https://${currentDomain}/social-image-1200x630.png`);
+        if (twitterUrl) twitterUrl.setAttribute('content', `https://${currentDomain}`);
+        if (canonical) canonical.setAttribute('href', `https://${baseDomain}`);
       }
+      
+      // Update meta tags immediately
+      updateMetaTags();
+      
+      // Redirect www to non-www after meta tags are updated
+      if (isWWW) {
+        setTimeout(() => {
+          window.location.href = window.location.href.replace('www.drommehusetditt.no', 'drommehusetditt.no');
+        }, 100);
+      }
+      
+      // Force social media cache refresh by adding timestamp to image URLs
+      function addCacheBuster() {
+        const timestamp = Date.now();
+        const ogImage = document.querySelector('meta[property="og:image"]');
+        const ogImageSecure = document.querySelector('meta[property="og:image:secure_url"]');
+        const ogImageUrl = document.querySelector('meta[property="og:image:url"]');
+        
+        if (ogImage) ogImage.setAttribute('content', `https://${currentDomain}/social-image-1200x630.png?v=${timestamp}`);
+        if (ogImageSecure) ogImageSecure.setAttribute('content', `https://${currentDomain}/social-image-1200x630.png?v=${timestamp}`);
+        if (ogImageUrl) ogImageUrl.setAttribute('content', `https://${currentDomain}/social-image-1200x630.png?v=${timestamp}`);
+      }
+      
+      // Add cache buster after a short delay
+      setTimeout(addCacheBuster, 50);
     </script>
     
     <!-- Primary Meta Tags -->
@@ -42,10 +85,31 @@
     <meta property="og:site_name" content="Drømme Huset AS" />
     <meta property="og:updated_time" content="2024-12-19T00:00:00Z" />
     
+    <!-- Domain-specific social media tags -->
+    <meta property="og:url" content="https://drommehusetditt.no" />
+    <meta property="og:image" content="https://drommehusetditt.no/social-image-1200x630.png" />
+    <meta property="og:image:secure_url" content="https://drommehusetditt.no/social-image-1200x630.png" />
+    <meta property="og:image:url" content="https://drommehusetditt.no/social-image-1200x630.png" />
+    
+    <!-- Additional Open Graph tags for better compatibility -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Drømme Huset AS - Profesjonelle Bygg og Anleggstjenester i Drammen" />
+    <meta property="og:description" content="Drømme Huset AS leverer profesjonelle bygg og anleggstjenester. Tømrer, murer, elektriker, rørlegger og mer. Over 25 års erfaring i Norge. Gratis konsultasjon og tilbud." />
+    
+    <!-- Force social media platforms to recognize both domains -->
+    <meta property="og:url" content="https://drommehusetditt.no" />
+    <meta property="og:image" content="https://drommehusetditt.no/social-image-1200x630.png" />
+    <meta property="og:image:secure_url" content="https://drommehusetditt.no/social-image-1200x630.png" />
+    <meta property="og:image:url" content="https://drommehusetditt.no/social-image-1200x630.png" />
+    
     <!-- WhatsApp specific optimizations -->
     <meta property="og:image:secure_url" content="https://drommehusetditt.no/social-image-1200x630.png" />
     <meta property="og:updated_time" content="2024-12-19T00:00:00Z" />
     <meta property="og:image:url" content="https://drommehusetditt.no/social-image-1200x630.png" />
+    
+    <!-- Facebook specific optimizations -->
+    <meta property="fb:app_id" content="your-facebook-app-id" />
+    <meta property="fb:pages" content="your-facebook-page-id" />
     
     <!-- Additional WhatsApp and social media optimizations -->
     <meta name="twitter:app:country" content="NO" />
@@ -60,6 +124,16 @@
     <!-- Pinterest specific -->
     <meta name="pinterest-rich-pin" content="true" />
     <meta name="pinterest:description" content="Drømme Huset AS leverer profesjonelle bygg og anleggstjenester. Tømrer, murer, elektriker, rørlegger og mer. Over 25 års erfaring i Norge." />
+    
+    <!-- Additional social media platforms -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Drømme Huset AS" />
+    <meta name="copyright" content="Drømme Huset AS" />
+    
+    <!-- Domain verification and social media compatibility -->
+    <meta name="twitter:domain_verification" content="your-twitter-verification" />
+    <meta name="facebook-domain-verification" content="your-facebook-verification" />
+    <meta name="google-site-verification" content="your-google-verification-code" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -107,6 +181,12 @@
     <link rel="preload" href="/social-image-1200x630.png" as="image" />
     <link rel="preload" href="/images/tomrer/main.avif" as="image" />
     <link rel="preload" href="/images/vatrom/main.avif" as="image" />
+    
+    <!-- DNS prefetch for social media platforms -->
+    <link rel="dns-prefetch" href="//www.facebook.com" />
+    <link rel="dns-prefetch" href="//www.twitter.com" />
+    <link rel="dns-prefetch" href="//www.linkedin.com" />
+    <link rel="dns-prefetch" href="//www.whatsapp.com" />
     <link rel="dns-prefetch" href="//images.pexels.com" />
     <link rel="dns-prefetch" href="//images.unsplash.com" />
     <link rel="dns-prefetch" href="//www.google.com" />
