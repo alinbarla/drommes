@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import SEO from '../components/SEO';
-import OptimizedImage from '../components/OptimizedImage';
+import PerformanceImage from '../components/PerformanceImage';
 import StructuredData from '../components/StructuredData';
 import { getBreadcrumbsFromPath } from '../utils/breadcrumbs';
 
@@ -216,15 +216,13 @@ const Home = () => {
                 className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
               >
                 <div className="relative overflow-hidden">
-                  <OptimizedImage
+                  <PerformanceImage
                     src={imageUrl}
                     alt={`${project.title} i Drammen - ${project.description.substring(0, 50)}... Profesjonelle ${project.category.toLowerCase()}-tjenester fra Drømme Huset AS`}
                     className="w-full h-48 sm:h-56 md:h-64 group-hover:scale-110 transition-transform duration-500"
                     width={400}
                     height={256}
                     priority={project.id <= 3}
-                    config="card"
-                    quality={75}
                     fallbackSrc="/images/placeholder.jpg"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>

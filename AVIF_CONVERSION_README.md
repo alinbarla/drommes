@@ -27,11 +27,9 @@ This runs the conversion and then builds the project.
 ## 📁 What Gets Created
 
 ### AVIF Files
-- **Main images**: `image-name.avif` (original size)
-- **Mobile variants**: `image-name-mobile.avif` (400x300)
-- **Tablet variants**: `image-name-tablet.avif` (800x600)
-- **Desktop variants**: `image-name-desktop.avif` (1200x900)
-- **Large variants**: `image-name-large.avif` (1920x1080)
+- **Single optimized file**: `image-name.avif` (original size with maximum compression)
+- **No responsive variants** - simplified file management
+- **Maximum space savings** - one file per image
 
 ### Manifest File
 - Location: `src/data/avifManifest.json`

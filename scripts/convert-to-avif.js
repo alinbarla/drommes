@@ -31,7 +31,9 @@ const CONFIG = {
     chromaSubsampling: '4:2:0', // Chroma subsampling for better compression
     lossless: false   // Set to true for lossless compression if needed
   },
-  // Responsive sizes for different devices
+  // Single AVIF output - no responsive variants
+  outputFormat: 'single', // 'single' for one file, 'responsive' for multiple sizes
+  // Responsive sizes for different devices (only used if outputFormat is 'responsive')
   sizes: {
     mobile: { width: 400, height: 300, suffix: 'mobile' },
     tablet: { width: 800, height: 600, suffix: 'tablet' },
@@ -143,7 +145,7 @@ async function convertToAvif(inputPath, outputPath, options = {}) {
 }
 
 /**
- * Process image with multiple size variants
+ * Process image with single AVIF output
  */
 async function processImage(inputPath) {
   const fileName = path.basename(inputPath, path.extname(inputPath));
@@ -173,75 +175,43 @@ async function processImage(inputPath) {
     
     console.log(`  📏 Original: ${metadata.width}x${metadata.height}, ${metadata.format}, ${Math.round(metadata.size / 1024)}KB`);
     
-    // Generate main AVIF version (original size)
-    const mainAvifPath = path.join(outputPath, `${fileName}.avif`);
-    const mainResult = await convertToAvif(inputPath, mainAvifPath);
+    // Generate single AVIF version (original size with compression)
+    const avifPath = path.join(outputPath, `${fileName}.avif`);
+    const avifResult = await convertToAvif(inputPath, avifPath);
     
-    if (mainResult.success) {
-      results.variants.main = mainResult;
-      results.totalAvifSize += mainResult.avifSize;
-      console.log(`  ✅ Main AVIF: ${Math.round(mainResult.avifSize / 1024)}KB (${mainResult.compressionRatio}% smaller)`);
-    }
-    
-    // Generate responsive size variants
-    for (const [sizeName, size] of Object.entries(CONFIG.sizes)) {
-      if (sizeName === 'original') continue; // Skip original as we already processed it
+    if (avifResult.success) {
+      results.variants.avif = avifResult;
+      results.totalAvifSize = avifResult.avifSize;
+      console.log(`  ✅ AVIF: ${Math.round(avifResult.avifSize / 1024)}KB (${avifResult.compressionRatio}% smaller)`);
       
-      const variantFileName = `${fileName}-${size.suffix}.avif`;
-      const variantPath = path.join(outputPath, variantFileName);
-      
-      try {
-        const resizedImage = image.clone().resize(size.width, size.height, {
-          fit: 'cover',
-          position: 'center'
-        });
-        
-        const variantResult = await convertToAvif(
-          inputPath, 
-          variantPath, 
-          { quality: CONFIG.quality[sizeName] || CONFIG.quality.default }
-        );
-        
-        if (variantResult.success) {
-          results.variants[sizeName] = variantResult;
-          results.totalAvifSize += variantResult.avifSize;
-          console.log(`  ✅ ${sizeName} AVIF: ${Math.round(variantResult.avifSize / 1024)}KB (${variantResult.compressionRatio}% smaller)`);
-        }
-        
-      } catch (error) {
-        console.error(`  ❌ Error creating ${sizeName} variant:`, error.message);
-      }
-    }
-    
-    // Calculate overall compression
-    const overallCompression = ((results.totalOriginalSize - results.totalAvifSize) / results.totalOriginalSize * 100).toFixed(1);
-    console.log(`  📊 Overall: ${Math.round(results.totalAvifSize / 1024)}KB (${overallCompression}% smaller than original)`);
-    
-    // Delete original file after successful conversion (if enabled)
-    if (Object.keys(results.variants).length > 0 && CONFIG.fileManagement.deleteOriginals) {
-      try {
-        // Create backup if enabled
-        if (CONFIG.fileManagement.backupBeforeDelete) {
-          const backupDir = CONFIG.fileManagement.backupDir;
-          if (!fs.existsSync(backupDir)) {
-            fs.mkdirSync(backupDir, { recursive: true });
+      // Delete original file after successful conversion (if enabled)
+      if (CONFIG.fileManagement.deleteOriginals) {
+        try {
+          // Create backup if enabled
+          if (CONFIG.fileManagement.backupBeforeDelete) {
+            const backupDir = CONFIG.fileManagement.backupDir;
+            if (!fs.existsSync(backupDir)) {
+              fs.mkdirSync(backupDir, { recursive: true });
+            }
+            const backupPath = path.join(backupDir, path.basename(inputPath));
+            fs.copyFileSync(inputPath, backupPath);
+            console.log(`  💾 Backup created: ${path.basename(inputPath)}`);
           }
-          const backupPath = path.join(backupDir, path.basename(inputPath));
-          fs.copyFileSync(inputPath, backupPath);
-          console.log(`  💾 Backup created: ${path.basename(inputPath)}`);
+          
+          // Delete original file
+          fs.unlinkSync(inputPath);
+          results.originalDeleted = true;
+          console.log(`  🗑️  Original file deleted: ${path.basename(inputPath)}`);
+        } catch (deleteError) {
+          console.error(`  ⚠️  Warning: Could not delete original file ${path.basename(inputPath)}:`, deleteError.message);
+          results.originalDeleted = false;
         }
-        
-        // Delete original file
-        fs.unlinkSync(inputPath);
-        results.originalDeleted = true;
-        console.log(`  🗑️  Original file deleted: ${path.basename(inputPath)}`);
-      } catch (deleteError) {
-        console.error(`  ⚠️  Warning: Could not delete original file ${path.basename(inputPath)}:`, deleteError.message);
+      } else {
+        console.log(`  💾 Original file kept: ${path.basename(inputPath)} (deletion disabled)`);
         results.originalDeleted = false;
       }
-    } else if (Object.keys(results.variants).length > 0) {
-      console.log(`  💾 Original file kept: ${path.basename(inputPath)} (deletion disabled)`);
-      results.originalDeleted = false;
+    } else {
+      console.error(`  ❌ Failed to convert to AVIF:`, avifResult.error);
     }
     
   } catch (error) {
@@ -258,6 +228,7 @@ function createAvifManifest(processedImages) {
   const manifest = {
     version: '2.0.0',
     format: 'AVIF',
+    outputFormat: CONFIG.outputFormat,
     generated: new Date().toISOString(),
     totalImages: processedImages.length,
     totalOriginalSize: 0,
@@ -273,7 +244,7 @@ function createAvifManifest(processedImages) {
     config: {
       quality: CONFIG.quality,
       avifSettings: CONFIG.avifSettings,
-      sizes: CONFIG.sizes
+      outputFormat: CONFIG.outputFormat
     },
     images: {}
   };
@@ -284,7 +255,7 @@ function createAvifManifest(processedImages) {
   let totalSpaceFreed = 0;
   
   for (const result of processedImages) {
-    if (result.variants.main) {
+    if (result.variants.avif) {
       totalOriginal += result.totalOriginalSize;
       totalAvif += result.totalAvifSize;
       
@@ -296,7 +267,6 @@ function createAvifManifest(processedImages) {
       manifest.images[result.fileName] = {
         originalSize: result.totalOriginalSize,
         avifSize: result.totalAvifSize,
-        variants: Object.keys(result.variants),
         originalDeleted: result.originalDeleted,
         path: `/images/${path.relative(CONFIG.inputDir, path.dirname(result.originalPath))}/${result.fileName}.avif`
       };
@@ -320,7 +290,8 @@ async function main() {
   console.log('🚀 Starting AVIF conversion process...');
   console.log(`📁 Input directory: ${CONFIG.inputDir}`);
   console.log(`📁 Output directory: ${CONFIG.outputDir}`);
-  console.log(`🎯 Target format: AVIF only`);
+  console.log(`🎯 Target format: AVIF only (single file per image)`);
+  console.log(`📱 Output format: ${CONFIG.outputFormat}`);
   console.log(`⚙️  Quality settings: ${JSON.stringify(CONFIG.quality, null, 2)}`);
   console.log(`🔧 AVIF settings: ${JSON.stringify(CONFIG.avifSettings, null, 2)}`);
   console.log(`🗂️  File management: ${JSON.stringify(CONFIG.fileManagement, null, 2)}`);
@@ -382,20 +353,22 @@ async function main() {
   console.log(`- Total space optimization: ${Math.round((manifest.compressionStats.totalSavings + manifest.deletionStats.totalSpaceFreed) / 1024 / 1024)}MB`);
   console.log(`- Manifest saved to: ${manifestPath}`);
   
-  console.log('\n💡 Benefits of AVIF:');
+  console.log('\n💡 Benefits of Single AVIF Approach:');
   console.log('- Superior compression compared to WebP and JPEG');
   console.log('- Better quality at smaller file sizes');
   console.log('- Modern browser support');
   console.log('- Reduced bandwidth usage');
   console.log('- Faster page loading times');
-  console.log('- Significant disk space savings');
+  console.log('- Maximum disk space savings (one file per image)');
+  console.log('- Simplified file management');
   
   console.log('\n🔧 Next steps:');
   console.log('1. Update your image components to use .avif files');
   console.log('2. Add AVIF fallback for older browsers if needed');
   console.log('3. Update your build process to include AVIF conversion');
   console.log('4. Test the website to ensure all images load correctly');
-  console.log('5. Original files have been deleted to save space');
+  console.log('5. Original files have been deleted to save maximum space');
+  console.log('6. Each image now has only one optimized AVIF version');
 }
 
 // Run the script
