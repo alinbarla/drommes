@@ -117,6 +117,33 @@ select:focus {
   padding: 0 !important;
 }
 
+/* Gallery Navigation Buttons - No hover effects, stable positioning */
+.gallery-nav-btn {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FFE55A 0%, #FFD147 8%, #D4B85A 30%, #C4A86A 40%, transparent 80%),
+              radial-gradient(ellipse farthest-corner at left top, #FFF8DC 0%, #FFFACD 8%, #F0E68C 25%, #B8860B 62.5%, #B8860B 100%);
+  color: #532200;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  position: absolute !important;
+  z-index: 20 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  /* No transitions or transforms to prevent movement */
+  transition: none !important;
+  transform: none !important;
+}
+
+.gallery-nav-btn:hover {
+  /* No hover effects to prevent movement */
+  transform: none !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+.gallery-nav-btn:active {
+  /* Minimal active state without movement */
+  transform: scale(0.98) !important;
+}
+
 .gallery-modal .modal-content {
   width: 100vw !important;
   height: 100vh !important;
@@ -155,16 +182,16 @@ select:focus {
   position: absolute !important;
   z-index: 20 !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  transition: none !important;
 }
 
 .gallery-modal .btn-premium:hover {
-  transform: scale(1.1) !important;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25) !important;
+  transform: none !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
 }
 
 .gallery-modal .btn-premium:active {
-  transform: scale(0.95) !important;
+  transform: scale(0.98) !important;
 }
 
 /* Mobile-specific optimizations */
@@ -234,7 +261,8 @@ select:focus {
 
 /* Touch-friendly button sizes on mobile */
 @media (max-width: 768px) {
-  .gallery-modal .btn-premium {
+  .gallery-modal .btn-premium,
+  .gallery-nav-btn {
     min-width: 48px !important;
     min-height: 48px !important;
     display: flex !important;

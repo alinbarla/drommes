@@ -17,6 +17,7 @@ const Gallery = () => {
   const [categoryData, setCategoryData] = useState<{ projects: Project[], individualImages: ProjectImage[] }>({ projects: [], individualImages: [] });
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
+  const [preloadedImages, setPreloadedImages] = useState<Set<string>>(new Set());
   
   // Get category from URL parameter
   const categoryFromUrl = searchParams.get('category');
@@ -136,6 +137,24 @@ const Gallery = () => {
     // Restore body scroll when modal is closed
     document.body.classList.remove('modal-open');
   };
+
+  // Function to preload images for instant navigation
+  const preloadImage = (src: string) => {
+    if (preloadedImages.has(src)) return;
+    
+    const img = new Image();
+    img.onload = () => {
+      setPreloadedImages(prev => new Set(prev).add(src));
+    };
+    img.src = src;
+  };
+
+  // Preload all images when category data changes
+  useEffect(() => {
+    if (allImages.length > 0) {
+      allImages.forEach(image => preloadImage(image.src));
+    }
+  }, [allImages]);
 
   // Function to refresh images
   const handleRefresh = async () => {
@@ -415,17 +434,17 @@ const Gallery = () => {
         {/* Modal for enlarged image */}
         {selectedImage && (
           <div 
-            className="fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-50 gallery-modal"
+            className="fixed inset-0 bg-black flex items-center justify-center z-50 gallery-modal"
             onClick={closeImage}
           >
             <div 
-              className="relative w-full h-full bg-white overflow-hidden flex flex-col modal-content"
+              className="relative w-full h-full bg-black overflow-hidden flex flex-col modal-content"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close button - Fixed position */}
               <button
                 onClick={closeImage}
-                className="btn-premium absolute top-4 right-4 p-3 rounded-full z-20 shadow-lg"
+                className="gallery-nav-btn absolute top-4 right-4 p-3 rounded-full z-20 shadow-lg"
                 style={{ top: '16px', right: '16px' }}
               >
                 <X className="h-6 w-6" />
@@ -436,14 +455,14 @@ const Gallery = () => {
                 <>
                   <button
                     onClick={previousImage}
-                    className="btn-premium absolute left-4 top-1/2 transform -translate-y-1/2 p-3 rounded-full z-20 shadow-lg"
+                    className="gallery-nav-btn absolute left-4 top-1/2 transform -translate-y-1/2 p-3 rounded-full z-20 shadow-lg"
                     style={{ left: '16px', top: '50%', transform: 'translateY(-50%)' }}
                   >
                     <ChevronLeft className="h-6 w-6" />
                   </button>
                   <button
                     onClick={nextImage}
-                    className="btn-premium absolute right-4 top-1/2 transform -translate-y-1/2 p-3 rounded-full z-20 shadow-lg"
+                    className="gallery-nav-btn absolute right-4 top-1/2 transform -translate-y-1/2 p-3 rounded-full z-20 shadow-lg"
                     style={{ right: '16px', top: '50%', transform: 'translateY(-50%)' }}
                   >
                     <ChevronRight className="h-6 w-6" />
@@ -470,7 +489,7 @@ const Gallery = () => {
               </div>
 
               {/* Image info - Fixed at bottom */}
-              <div className="modal-info bg-white border-t border-gray-200 p-4">
+              <div className="modal-info bg-black border-t border-gray-600 p-4">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="btn-premium px-3 py-1 rounded-full text-sm font-medium">
@@ -483,16 +502,16 @@ const Gallery = () => {
                     )}
                   </div>
                   {allImages.length > 1 && (
-                    <span className="text-puce-500 text-sm font-medium">
+                    <span className="text-white text-sm font-medium">
                       {currentImageIndex + 1} av {allImages.length}
                     </span>
                   )}
                 </div>
-                <h3 className="text-xl font-bold text-puce-500 mb-2">
+                <h3 className="text-xl font-bold text-white mb-2">
                   {selectedImage.alt}
                 </h3>
                 {selectedImage.projectName && (
-                  <p className="text-puce-500 leading-relaxed text-sm">
+                  <p className="text-gray-300 leading-relaxed text-sm">
                     Prosjekt: {selectedImage.projectName}
                   </p>
                 )}
