@@ -66,9 +66,9 @@ const Home = () => {
     },
     {
       id: 5,
-      title: 'Sparkling Maling',
+      title: 'Maling',
       description: 'Profesjonell maling og overflatebehandling for alle overflater. Vi bruker miljøvennlige produkter og tilbyr både innvendig og utvendig maling.',
-      image: '/images/maling/main.avif',
+      image: '/images/maler/main.avif',
       category: 'Maling'
     },
     {
@@ -82,7 +82,7 @@ const Home = () => {
       id: 7,
       title: 'Rørlegger',
       description: 'Kompetent rørleggerarbeid og sanitetssystemer. Vi leverer alt fra ny installasjon til reparasjoner. Gratis diagnose og rask respons.',
-      image: '/images/rorlegger/main.avif',
+      image: '/images/Rørlegger/main.avif',
       category: 'Rørlegger'
     },
     {
@@ -207,8 +207,6 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12 px-4 sm:px-0">
             {projects.map((project) => {
               const imageUrl = `${project.image}?t=${Date.now()}`;
-              console.log(`🖼️ Loading image for ${project.category}: ${imageUrl}`);
-              console.log(`📁 Category: ${project.category}, Path: ${project.image}`);
               return (
               <Link
                 key={project.id}
@@ -223,7 +221,8 @@ const Home = () => {
                     width={400}
                     height={256}
                     priority={project.id <= 3}
-                    fallbackSrc="/images/placeholder.avif"
+                    fallbackSrc="/hero.avif"
+
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                   <div className="absolute top-4 left-4">
