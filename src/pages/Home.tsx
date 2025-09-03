@@ -200,7 +200,7 @@ const Home = () => {
               Våre Tjenester
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-puce-500 max-w-2xl sm:max-w-3xl mx-auto px-4 sm:px-0 leading-relaxed">
-              Vi tilbyr pålitelige og profesjonelle håndverkstjenester innen tømrer, snekkerarbeid, graver, betong, våtromsrenovering, kjøkken møbler, maler, arkitekt, elektriker, rørlegger, selger av alle byggematerialer, til lokale kunder i hele Viken, Vestfold og Telemark fylkeskommune-i Drammen-området(~100km).
+              Vi tilbyr pålitelige og profesjonelle håndverkstjenester innen tømrer, snekkerarbeid, graver, betong, våtromsrenovering, kjøkken møbler, maler, arkitekt, elektriker, rørlegger, selger av alle byggematerialer, til lokale kunder i hele Viken, Vestfold og Telemark fylkeskommune-i Drammen-området(~120km).
             </p>
           </header>
 
