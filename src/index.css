@@ -113,28 +113,130 @@ select:focus {
 }
 
 /* Gallery Modal Mobile Optimizations */
+.gallery-modal {
+  padding: 0 !important;
+}
+
+.gallery-modal .modal-content {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: none !important;
+  max-height: none !important;
+  border-radius: 0 !important;
+}
+
+.gallery-modal .modal-image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  min-height: 0;
+}
+
+.gallery-modal .modal-image {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block;
+}
+
+.gallery-modal .modal-info {
+  flex-shrink: 0;
+  padding: 16px !important;
+  font-size: 14px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Ensure navigation buttons stay in fixed positions */
+.gallery-modal .btn-premium {
+  position: absolute !important;
+  z-index: 20 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.gallery-modal .btn-premium:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25) !important;
+}
+
+.gallery-modal .btn-premium:active {
+  transform: scale(0.95) !important;
+}
+
+/* Mobile-specific optimizations */
 @media (max-width: 768px) {
-  .gallery-modal {
-    padding: 0;
-  }
-  
-  .gallery-modal .modal-content {
-    width: 100vw;
-    height: 100vh;
-    max-width: none;
-    max-height: none;
-    border-radius: 0;
-  }
-  
-  .gallery-modal .modal-image {
-    max-height: calc(100vh - 200px);
-    max-width: calc(100vw - 16px);
-    object-fit: contain;
+  .gallery-modal .modal-image-container {
+    padding: 12px;
   }
   
   .gallery-modal .modal-info {
-    padding: 1rem;
-    font-size: 0.875rem;
+    padding: 12px !important;
+    font-size: 13px;
+  }
+  
+  .gallery-modal .btn-premium {
+    padding: 12px !important;
+  }
+  
+  .gallery-modal .btn-premium svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+/* Prevent any layout shifts */
+.gallery-modal * {
+  box-sizing: border-box;
+}
+
+.gallery-modal .modal-content {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ensure consistent image sizing across all devices */
+.gallery-modal .modal-image {
+  /* Force consistent sizing */
+  max-width: calc(100vw - 32px) !important;
+  max-height: calc(100vh - 200px) !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block;
+  margin: auto;
+}
+
+/* Touch-friendly button sizes on mobile */
+@media (max-width: 768px) {
+  .gallery-modal .btn-premium {
+    min-width: 48px !important;
+    min-height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+/* Ensure modal takes full screen on mobile */
+@media (max-width: 768px) {
+  .gallery-modal {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+  
+  .gallery-modal .modal-content {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0 !important;
   }
 }
 

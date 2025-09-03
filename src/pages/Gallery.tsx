@@ -415,76 +415,84 @@ const Gallery = () => {
         {/* Modal for enlarged image */}
         {selectedImage && (
           <div 
-            className="fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-50 p-2 sm:p-4 gallery-modal"
+            className="fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-50 gallery-modal"
             onClick={closeImage}
           >
             <div 
-              className="relative w-full h-full max-w-6xl max-h-full bg-white rounded-2xl overflow-hidden flex flex-col modal-content"
+              className="relative w-full h-full bg-white overflow-hidden flex flex-col modal-content"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Close button */}
+              {/* Close button - Fixed position */}
               <button
                 onClick={closeImage}
-                className="btn-premium absolute top-2 right-2 sm:top-4 sm:right-4 p-2 rounded-full z-10"
+                className="btn-premium absolute top-4 right-4 p-3 rounded-full z-20 shadow-lg"
+                style={{ top: '16px', right: '16px' }}
               >
-                <X className="h-5 w-5 sm:h-6 sm:w-6" />
+                <X className="h-6 w-6" />
               </button>
 
-              {/* Navigation buttons */}
+              {/* Navigation buttons - Fixed positions */}
               {allImages.length > 1 && (
                 <>
                   <button
                     onClick={previousImage}
-                    className="btn-premium absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 p-2 sm:p-3 rounded-full z-10"
+                    className="btn-premium absolute left-4 top-1/2 transform -translate-y-1/2 p-3 rounded-full z-20 shadow-lg"
+                    style={{ left: '16px', top: '50%', transform: 'translateY(-50%)' }}
                   >
-                    <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
+                    <ChevronLeft className="h-6 w-6" />
                   </button>
                   <button
                     onClick={nextImage}
-                    className="btn-premium absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 p-2 sm:p-3 rounded-full z-10"
+                    className="btn-premium absolute right-4 top-1/2 transform -translate-y-1/2 p-3 rounded-full z-20 shadow-lg"
+                    style={{ right: '16px', top: '50%', transform: 'translateY(-50%)' }}
                   >
-                    <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
+                    <ChevronRight className="h-6 w-6" />
                   </button>
                 </>
               )}
 
-              {/* Image Container - Fixed size on mobile */}
-              <div className="flex-1 flex items-center justify-center p-2 sm:p-4">
-                <img
-                  src={selectedImage.src}
-                  alt={selectedImage.alt}
-                  className="w-full h-full object-contain max-w-full max-h-full modal-image"
-                  style={{
-                    maxHeight: 'calc(100vh - 200px)',
-                    maxWidth: 'calc(100vw - 32px)'
-                  }}
-                />
+              {/* Image Container - Fixed size and centered */}
+              <div className="flex-1 flex items-center justify-center p-4 modal-image-container">
+                <div className="w-full h-full flex items-center justify-center">
+                  <img
+                    src={selectedImage.src}
+                    alt={selectedImage.alt}
+                    className="modal-image"
+                    style={{
+                      maxWidth: '100%',
+                      maxHeight: '100%',
+                      width: 'auto',
+                      height: 'auto',
+                      objectFit: 'contain'
+                    }}
+                  />
+                </div>
               </div>
 
-              {/* Image info */}
-              <div className="p-3 sm:p-6 bg-white border-t border-gray-200 modal-info">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0 mb-3">
-                  <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-                    <span className="btn-premium px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
+              {/* Image info - Fixed at bottom */}
+              <div className="modal-info bg-white border-t border-gray-200 p-4">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="btn-premium px-3 py-1 rounded-full text-sm font-medium">
                       {selectedImage.category}
                     </span>
                     {selectedImage.projectName && (
-                      <span className="btn-premium px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
+                      <span className="btn-premium px-3 py-1 rounded-full text-sm font-medium">
                         {selectedImage.projectName}
                       </span>
                     )}
                   </div>
                   {allImages.length > 1 && (
-                    <span className="text-puce-500 text-xs sm:text-sm">
+                    <span className="text-puce-500 text-sm font-medium">
                       {currentImageIndex + 1} av {allImages.length}
                     </span>
                   )}
                 </div>
-                <h3 className="text-lg sm:text-2xl font-bold text-puce-500 mb-2 sm:mb-3">
+                <h3 className="text-xl font-bold text-puce-500 mb-2">
                   {selectedImage.alt}
                 </h3>
                 {selectedImage.projectName && (
-                  <p className="text-puce-500 leading-relaxed text-sm sm:text-base">
+                  <p className="text-puce-500 leading-relaxed text-sm">
                     Prosjekt: {selectedImage.projectName}
                   </p>
                 )}
