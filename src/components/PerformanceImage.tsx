@@ -21,23 +21,18 @@ const PerformanceImage: React.FC<PerformanceImageProps> = ({
   height,
   loading = 'eager',
   priority = false,
-  fallbackSrc = '/images/placeholder.avif',
+  fallbackSrc = '/hero.avif',
   onLoad,
   onError
 }) => {
-  const [imageSrc, setImageSrc] = useState<string>(priority ? src : '');
+  const [imageSrc, setImageSrc] = useState<string>(src);
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
-  const [isInView, setIsInView] = useState(true);
   const imgRef = useRef<HTMLImageElement>(null);
-  const observerRef = useRef<IntersectionObserver | null>(null);
 
   // Images load instantly - no lazy loading
   useEffect(() => {
-    if (!isInView) {
-      setIsInView(true);
-      setImageSrc(src);
-    }
+    setImageSrc(src);
   }, [src]);
 
   // Handle image load
@@ -68,7 +63,7 @@ const PerformanceImage: React.FC<PerformanceImageProps> = ({
     }
   }, [priority, src, handleLoad, handleError]);
 
-  // No observer cleanup needed - no lazy loading
+
 
   return (
     <div 
