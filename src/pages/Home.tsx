@@ -117,7 +117,7 @@ const Home = () => {
       <SEO 
         title="Drømme Huset AS - Bygg og Anlegg i Drammen | Tømrer, Murer, Elektriker"
         description="Drømme Huset AS leverer profesjonelle bygg og anleggstjenester i Drammen, Lier, Svelvik og Holmestrand. Tømrer, murer, elektriker, rørlegger, våtrom og kjøkken. Over 25 års erfaring i Viken fylkeskommune."
-        url="https://dromehusetditt.no"
+        url="https://drommehusetditt.no"
       />
       <StructuredData 
         type="WebSite" 
