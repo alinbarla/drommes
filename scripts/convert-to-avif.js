@@ -320,7 +320,7 @@ async function main() {
     
     const result = await processImage(imageFile);
     
-    if (result.variants.main) {
+    if (result.variants.avif) {
       processedImages.push(result);
       successCount++;
     } else {
