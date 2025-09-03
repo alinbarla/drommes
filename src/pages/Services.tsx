@@ -23,7 +23,7 @@ const Services = () => {
         'Renovering og reparasjoner'
       ],
 
-      image: '/images/tomrer/main.webp',
+      image: '/images/tomrer/main.avif',
       category: 'Tømrer',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand'],
       duration: '1-8 uker',
@@ -42,7 +42,7 @@ const Services = () => {
         'Ventilasjon og oppvarming'
       ],
 
-      image: '/images/vatrom/main.webp',
+      image: '/images/vatrom/main.avif',
       category: 'Våtrom',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand'],
       duration: '2-4 uker',
@@ -61,7 +61,7 @@ const Services = () => {
         'Design og planlegging'
       ],
 
-      image: '/images/kjokken/main.webp',
+      image: '/images/kjokken/main.avif',
       category: 'Kjøkken',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand'],
       duration: '3-6 uker',
@@ -80,7 +80,7 @@ const Services = () => {
         '24/7 nødhjelp'
       ],
 
-      image: '/images/elektriker/main.webp',
+      image: '/images/elektriker/main.avif',
       category: 'Elektriker',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand'],
       duration: '1-3 dager',
@@ -99,7 +99,7 @@ const Services = () => {
         'Isolasjon og tetting'
       ],
 
-      image: '/images/murer/main.webp',
+      image: '/images/murer/main.avif',
       category: 'Murer',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand'],
       duration: '1-4 uker',
@@ -118,7 +118,7 @@ const Services = () => {
         'Gulvvarme og oppvarming'
       ],
 
-      image: '/images/Rørlegger/main.webp',
+      image: '/images/Rørlegger/main.avif',
       category: 'Rørlegger',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand'],
       duration: '1-3 dager',

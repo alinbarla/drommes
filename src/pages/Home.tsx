@@ -40,70 +40,70 @@ const Home = () => {
       id: 1,
       title: 'Tømrerarbeid',
       description: 'Profesjonelle tømrerarbeider med høy kvalitet og presisjon i Drammen-området. Vi leverer alt fra tak og gulv til vinduer og dører. Gratis tilbud og 5 års garanti på alle arbeider.',
-      image: '/images/tomrer/main.webp',
+      image: '/images/tomrer/main.avif',
       category: 'Tømrer'
     },
     {
       id: 2,
       title: 'Gravetjenester',
       description: 'Kompetent graving og grunnarbeid for alle typer prosjekter i Drammen, Lier, Svelvik og Holmestrand. Vi har egen maskinpark og erfaren operatører. Rask levering og konkurransedyktige priser.',
-      image: '/images/graving/main.webp',
+      image: '/images/graving/main.avif',
       category: 'Graving'
     },
     {
       id: 3,
       title: 'Våtrom',
       description: 'Komplette våtromsrenoveringer med moderne design og funksjonalitet. Vi bruker kun kvalitetsmaterialer og tilbyr 10 års garanti på våtromsarbeid.',
-      image: '/images/vatrom/main.webp',
+      image: '/images/vatrom/main.avif',
       category: 'Våtrom'
     },
     {
       id: 4,
       title: 'Murerarbeid',
       description: 'Solid murerarbeid med tradisjonelle og moderne teknikker. Vi leverer alt fra fundament til fasadearbeid. Gratis konsultasjon og detaljert tilbud.',
-      image: '/images/murer/main.webp',
+      image: '/images/murer/main.avif',
       category: 'Murer'
     },
     {
       id: 5,
       title: 'Sparkling Maling',
       description: 'Profesjonell maling og overflatebehandling for alle overflater. Vi bruker miljøvennlige produkter og tilbyr både innvendig og utvendig maling.',
-      image: '/images/maling/main.webp',
+      image: '/images/maling/main.avif',
       category: 'Maling'
     },
     {
       id: 6,
       title: 'Elektriker',
       description: 'Sikker elektrisk installasjon og vedlikehold av høy kvalitet. Vi er godkjent elektriker med alle nødvendige sertifikater. 24/7 nødhjelp tilgjengelig.',
-      image: '/images/elektriker/main.webp',
+      image: '/images/elektriker/main.avif',
       category: 'Elektriker'
     },
     {
       id: 7,
       title: 'Rørlegger',
       description: 'Kompetent rørleggerarbeid og sanitetssystemer. Vi leverer alt fra ny installasjon til reparasjoner. Gratis diagnose og rask respons.',
-      image: '/images/rorlegger/main.webp',
+      image: '/images/rorlegger/main.avif',
       category: 'Rørlegger'
     },
     {
       id: 8,
       title: 'Kjøkken-møbler',
       description: 'Skreddersydde kjøkken-møbler med moderne design og funksjonalitet. Vi tilbyr gratis designkonsultasjon og leverer fra skap til komplett kjøkken.',
-      image: '/images/kjokken/main.webp',
+      image: '/images/kjokken/main.avif',
       category: 'Kjøkken'
     },
     {
       id: 9,
       title: 'Arkitekt',
       description: 'Profesjonell arkitekttegning og planlegging for dine byggeprosjekter. Vi hjelper deg med byggesøknader og detaljplaner. Gratis første konsultasjon.',
-      image: '/images/arkitekt/main.webp',
+      image: '/images/arkitekt/main.avif',
       category: 'Arkitekt'
     },
     {
       id: 10,
       title: 'Salg av byggematerialer',
       description: 'Kvalitetsbyggematerialer til konkurransedyktige priser. Vi leverer direkte til byggeplass og tilbyr rabatter for større ordrer.',
-      image: '/images/material/main.webp',
+      image: '/images/material/main.avif',
       category: 'Materialer'
     }
   ];

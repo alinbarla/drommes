@@ -26,7 +26,7 @@ const ServiceDetail = () => {
         'Skap og møbler'
       ],
 
-      image: '/images/tomrer/main.webp',
+      image: '/images/tomrer/main.avif',
       category: 'Tømrer',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand', 'Konnerud', 'Gulskogen', 'Åssiden', 'Bragernes'],
       duration: '1-8 uker',
@@ -88,7 +88,7 @@ const ServiceDetail = () => {
         'Tilgjengelighetsløsninger'
       ],
 
-      image: '/images/vatrom/main.webp',
+      image: '/images/vatrom/main.avif',
       category: 'Våtrom',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand', 'Konnerud', 'Gulskogen', 'Åssiden', 'Bragernes'],
       duration: '2-4 uker',
@@ -150,7 +150,7 @@ const ServiceDetail = () => {
         'Belysning og ventilasjon'
       ],
 
-      image: '/images/kjokken/main.webp',
+      image: '/images/kjokken/main.avif',
       category: 'Kjøkken',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand', 'Konnerud', 'Gulskogen', 'Åssiden', 'Bragernes'],
       duration: '3-6 uker',
@@ -212,7 +212,7 @@ const ServiceDetail = () => {
         'Oppgradering av gamle installasjoner'
       ],
 
-      image: '/images/elektriker/main.webp',
+      image: '/images/elektriker/main.avif',
       category: 'Elektriker',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand', 'Konnerud', 'Gulskogen', 'Åssiden', 'Bragernes'],
       duration: '1-3 dager',
@@ -274,7 +274,7 @@ const ServiceDetail = () => {
         'Restaurering av gamle bygninger'
       ],
 
-      image: '/images/murer/main.webp',
+      image: '/images/murer/main.avif',
       category: 'Murer',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand', 'Konnerud', 'Gulskogen', 'Åssiden', 'Bragernes'],
       duration: '1-4 uker',
@@ -336,7 +336,7 @@ const ServiceDetail = () => {
         'Vannbehandling og filtrering'
       ],
 
-      image: '/images/Rørlegger/main.webp',
+      image: '/images/Rørlegger/main.avif',
       category: 'Rørlegger',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand', 'Konnerud', 'Gulskogen', 'Åssiden', 'Bragernes'],
       duration: '1-3 dager',
