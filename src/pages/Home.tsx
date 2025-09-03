@@ -173,20 +173,20 @@ const Home = () => {
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Profesjonelle 
-              <span className="text-gold-500">håndverkstjenester</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight px-4 sm:px-0">
+              <span className="block sm:inline">Profesjonelle</span>
+              <span className="block sm:inline text-gold-500"> håndverkstjenester</span>
             </h1>
-              <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Med over 20 års erfaring som tømrere og byggmestere leverer vi håndverk av høyeste kvalitet og pålitelighet, fra start til ferdig nøkkel: i Drammen, Oslo, Sandvika, Asker, Lier, Tonsberg, Kongsberg, Hoksund, Svelvik, Holmestrand, Baerum over 240 prosjekter
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-gray-300 max-w-2xl sm:max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
+                Med over 20 års erfaring som tømrere og byggmestere leverer vi håndverk av høyeste kvalitet og pålitelighet, fra start til ferdig nøkkel: i Drammen, Oslo, Sandvika, Asker, Lier, Tonsberg, Kongsberg, Hoksund, Svelvik, Holmestrand, Baerum over 240 prosjekter
               </p>
             <Link
               to="/contact"
-              className="btn-premium inline-flex items-center py-4 px-8 rounded-xl hover:shadow-xl hover:scale-105 group"
+              className="btn-premium inline-flex items-center py-3 sm:py-4 px-6 sm:px-8 rounded-xl hover:shadow-xl hover:scale-105 group text-sm sm:text-base"
               aria-label="Kontakt oss for å starte ditt byggeprosjekt"
             >
               Start Ditt Prosjekt
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
           </div>
         </div>
@@ -196,15 +196,15 @@ const Home = () => {
       <section className="py-20 bg-sand-500" aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <header className="text-center mb-16">
-            <h2 id="services-heading" className="text-4xl md:text-5xl font-bold text-puce-500 mb-6">
+            <h2 id="services-heading" className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-puce-500 mb-4 sm:mb-6 px-4 sm:px-0">
               Våre Tjenester
             </h2>
-            <p className="text-xl text-puce-500 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-puce-500 max-w-2xl sm:max-w-3xl mx-auto px-4 sm:px-0 leading-relaxed">
               Vi tilbyr pålitelige og profesjonelle håndverkstjenester innen tømrer, snekkerarbeid, graver, betong, våtromsrenovering, kjøkken møbler, maler, arkitekt, elektriker, rørlegger, selger av alle byggematerialer, til lokale kunder i hele Viken, Vestfold og Telemark fylkeskommune-i Drammen-området(~100km).
             </p>
           </header>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12 px-4 sm:px-0">
             {projects.map((project) => {
               const imageUrl = `${project.image}?t=${Date.now()}`;
               console.log(`🖼️ Loading image for ${project.category}: ${imageUrl}`);
@@ -219,7 +219,7 @@ const Home = () => {
                   <OptimizedImage
                     src={imageUrl}
                     alt={`${project.title} i Drammen - ${project.description.substring(0, 50)}... Profesjonelle ${project.category.toLowerCase()}-tjenester fra Drømme Huset AS`}
-                    className="w-full h-64 group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-48 sm:h-56 md:h-64 group-hover:scale-110 transition-transform duration-500"
                     width={400}
                     height={256}
                     priority={project.id <= 3}
@@ -234,16 +234,16 @@ const Home = () => {
                     </span>
                   </div>
                 </div>
-                <div className="p-5">
-                  <h3 className="text-xl font-bold text-puce-500 mb-2">
+                <div className="p-4 sm:p-5">
+                  <h3 className="text-lg sm:text-xl font-bold text-puce-500 mb-2">
                         {project.title}
                       </h3>
-                  <p className="text-puce-500 text-sm leading-relaxed mb-3">
+                  <p className="text-puce-500 text-xs sm:text-sm leading-relaxed mb-3">
                         {project.description}
                       </p>
-                  <div className="flex items-center text-gold-500 font-medium group-hover:text-gold-400 transition-colors duration-300">
+                  <div className="flex items-center text-gold-500 font-medium group-hover:text-gold-400 transition-colors duration-300 text-sm sm:text-base">
                     Se Tjeneste
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+                        <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                 </div>
               </Link>
@@ -251,13 +251,13 @@ const Home = () => {
             })}
           </div>
 
-          <div className="text-center">
+          <div className="text-center px-4 sm:px-0">
             <Link
               to="/gallery"
-              className="btn-premium inline-flex items-center py-4 px-8 rounded-xl hover:shadow-xl hover:scale-105 group"
+              className="btn-premium inline-flex items-center py-3 sm:py-4 px-6 sm:px-8 rounded-xl hover:shadow-xl hover:scale-105 group text-sm sm:text-base"
             >
               Se Alle Tjenester
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
           </div>
         </div>
