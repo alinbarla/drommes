@@ -177,9 +177,9 @@ const Home = () => {
               Vi Bygger Drømmer Til
               <span className="text-gold-500"> Virkelighet</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Med over 25 års erfaring som tømrere og byggmestere leverer vi håndverk av høyeste kvalitet og pålitelighet, fra start til ferdig nøkkel, for både private og bedrifter i <Link to="/location/drammen" className="text-gold-400 hover:text-gold-300 underline">Drammen</Link>, <Link to="/location/lier" className="text-gold-400 hover:text-gold-300 underline">Lier</Link>, <Link to="/location/svelvik" className="text-gold-400 hover:text-gold-300 underline">Svelvik</Link> og <Link to="/location/holmestrand" className="text-gold-400 hover:text-gold-300 underline">Holmestrand</Link>. Vi spesialiserer oss på <Link to="/services/vatromsrenovering" className="text-gold-400 hover:text-gold-300 underline">våtromsrenovering</Link>, <Link to="/services/kjokkenrenovering" className="text-gold-400 hover:text-gold-300 underline">kjøkkenrenovering</Link> og <Link to="/services/tomrerarbeid" className="text-gold-400 hover:text-gold-300 underline">tømrerarbeid</Link>.
-            </p>
+                          <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                Profesjonelle håndverkstjenester: Med over 20 års erfaring som tømrere og byggmestere leverer vi håndverk av høyeste kvalitet og pålitelighet, fra start til ferdig nøkkel: i Drammen, Oslo, Sandvika, Asker, Lier, Tonsberg, Kongsberg, Hoksund, Svelvik, Holmestrand, Baerum over 240 prosjekter
+              </p>
             <Link
               to="/contact"
               className="btn-premium inline-flex items-center py-4 px-8 rounded-xl hover:shadow-xl hover:scale-105 group"
@@ -200,15 +200,7 @@ const Home = () => {
               Våre Tjenester
             </h2>
             <p className="text-xl text-puce-500 max-w-3xl mx-auto">
-              Utforsk våre omfattende tjenester innen bygg og anlegg som viser 
-              vårt engasjement for kvalitet, innovasjon og håndverk i Drammen-området. 
-              Vi leverer <Link to="/services/tomrerarbeid" className="text-gold-500 hover:text-gold-400 underline">tømrerarbeid</Link>, 
-              <Link to="/services/vatromsrenovering" className="text-gold-500 hover:text-gold-400 underline"> våtromsrenovering</Link>, 
-              <Link to="/services/kjokkenrenovering" className="text-gold-500 hover:text-gold-400 underline"> kjøkkenrenovering</Link>, 
-              <Link to="/services/elektriker" className="text-gold-500 hover:text-gold-400 underline"> elektrikerarbeid</Link>, 
-              <Link to="/services/murerarbeid" className="text-gold-500 hover:text-gold-400 underline"> murerarbeid</Link> og 
-              <Link to="/services/rorlegger" className="text-gold-500 hover:text-gold-400 underline"> rørleggerarbeid</Link> til 
-              <Link to="/about" className="text-gold-500 hover:text-gold-400 underline"> lokale kunder</Link> i hele Viken fylkeskommune.
+              Vi tilbyr pålitelige og profesjonelle håndverkstjenester innen tømrer, snekkerarbeid, graver, betong, våtromsrenovering, kjøkken møbler, maler, arkitekt, elektriker, rørlegger, selger av alle byggematerialer, til lokale kunder i hele Viken, Vestfold og Telemark fylkeskommune-i Drammen-området(~100km).
             </p>
           </header>
 
