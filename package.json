@@ -11,7 +11,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "analyze-images": "node scripts/optimize-images.js",
-    "optimize": "npm run analyze-images && npm run build"
+    "convert-to-avif": "node scripts/convert-to-avif.js",
+    "optimize": "npm run analyze-images && npm run build",
+    "avif-only": "npm run convert-to-avif && npm run build"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",

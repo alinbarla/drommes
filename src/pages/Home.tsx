@@ -174,11 +174,11 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Vi Bygger Drømmer Til
-              <span className="text-gold-500"> Virkelighet</span>
+              Profesjonelle 
+              <span className="text-gold-500">håndverkstjenester</span>
             </h1>
-                          <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                Profesjonelle håndverkstjenester: Med over 20 års erfaring som tømrere og byggmestere leverer vi håndverk av høyeste kvalitet og pålitelighet, fra start til ferdig nøkkel: i Drammen, Oslo, Sandvika, Asker, Lier, Tonsberg, Kongsberg, Hoksund, Svelvik, Holmestrand, Baerum over 240 prosjekter
+              <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Med over 20 års erfaring som tømrere og byggmestere leverer vi håndverk av høyeste kvalitet og pålitelighet, fra start til ferdig nøkkel: i Drammen, Oslo, Sandvika, Asker, Lier, Tonsberg, Kongsberg, Hoksund, Svelvik, Holmestrand, Baerum over 240 prosjekter
               </p>
             <Link
               to="/contact"
