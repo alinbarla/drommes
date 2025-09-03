@@ -4,7 +4,13 @@
   "framework": "vite",
   "redirects": [
     {
-      "source": "https://www.drommehusetditt.no/:path*",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.drommehusetditt.no"
+        }
+      ],
       "destination": "https://drommehusetditt.no/:path*",
       "permanent": true
     }
