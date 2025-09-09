@@ -68,7 +68,7 @@ const Home = () => {
       id: 5,
       title: 'Maling',
       description: 'Profesjonell maling og overflatebehandling for alle overflater. Vi bruker miljøvennlige produkter og tilbyr både innvendig og utvendig maling.',
-      image: '/images/maler/main.avif',
+      image: '/images/maling/main.avif',
       category: 'Maling'
     },
     {
@@ -103,7 +103,7 @@ const Home = () => {
       id: 10,
       title: 'Salg av byggematerialer',
       description: 'Kvalitetsbyggematerialer til konkurransedyktige priser. Vi leverer direkte til byggeplass og tilbyr rabatter for større ordrer.',
-      image: '/images/material/main.avif',
+      image: '/images/salg-av-byggematerialer/main.avif',
       category: 'Materialer'
     }
   ];
