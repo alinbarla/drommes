@@ -443,6 +443,67 @@ const ServiceDetail = () => {
         }
       ],
       keywords: ['rørlegger drammen', 'rørlegger lier', 'rørlegger svelvik', 'rørlegger holmestrand', 'sanitær drammen', 'gulvvarme lier']
+    },
+    'maling': {
+      title: 'Maling i Drammen',
+      description: 'Profesjonell maling og overflatebehandling for alle overflater. Vi bruker miljøvennlige produkter og tilbyr både innvendig og utvendig maling.',
+      longDescription: 'Drømme Huset AS tilbyr profesjonelle malingsarbeider i Drammen, Lier, Svelvik og Holmestrand. Vårt team av erfarne malere har over 25 års erfaring og kan håndtere alt fra små reparasjoner til store malingsprosjekter. Vi bruker kun miljøvennlige produkter av høy kvalitet.',
+      features: [
+        'Innvendig maling',
+        'Utvendig maling',
+        'Overflatebehandling',
+        'Spraymaling',
+        'Tapet og veggbehandling',
+        'Gulvbehandling',
+        'Møbelmaling',
+        'Spesialeffekter og dekor'
+      ],
+      image: '/images/maling/main.avif',
+      category: 'Maling',
+      areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand', 'Konnerud', 'Gulskogen', 'Åssiden', 'Bragernes'],
+      duration: '1-5 dager',
+      guarantee: '2 års garanti',
+      process: [
+        {
+          step: 1,
+          title: 'Konsultasjon og vurdering',
+          description: 'Vi vurderer overflatene og anbefaler beste løsning'
+        },
+        {
+          step: 2,
+          title: 'Forberedelse',
+          description: 'Grundig forberedelse av overflater og beskyttelse av omgivelser'
+        },
+        {
+          step: 3,
+          title: 'Maling',
+          description: 'Profesjonell maling med høy kvalitet'
+        },
+        {
+          step: 4,
+          title: 'Kvalitetskontroll',
+          description: 'Gjennomgang og eventuelle justeringer'
+        }
+      ],
+      faqs: [
+        {
+          question: "Hvilke typer maling tilbyr dere?",
+          answer: "Vi tilbyr innvendig og utvendig maling, spraymaling, overflatebehandling, tapet og veggbehandling, gulvbehandling og møbelmaling."
+        },
+        {
+          question: "Bruker dere miljøvennlige produkter?",
+          answer: "Ja, vi bruker kun miljøvennlige produkter av høy kvalitet som er trygge for både miljø og helse."
+        },
+        {
+          question: "Hvor lang tid tar et malingsprosjekt?",
+          answer: "Det avhenger av størrelsen på prosjektet. Små prosjekter kan ta 1-2 dager, mens større prosjekter kan ta 3-5 dager."
+        },
+        {
+          question: "Tilbyr dere garanti på malingsarbeid?",
+          answer: "Ja, vi tilbyr 2 års garanti på alle malingsarbeider, både materialer og utførelse."
+        }
+      ],
+      keywords: ['maling drammen', 'maling lier', 'maling svelvik', 'maling holmestrand', 'maler drammen', 'overflatebehandling lier']
     }
   };
 
