@@ -208,7 +208,7 @@ const getStaticCategoryData = (category: string): CategoryData => {
           name: 'Tømrer Skole',
           category: 'Tømrer',
           images: [
-            { id: 'skole-1', src: '/images/Tømrer/tomrer skole/5658d317-12cd-47bc-97f8-68a7d5e2e36a.avif', alt: 'Tømrer Skole Prosjekt', category: 'Tømrer', projectName: 'Tømrer Skole' }
+            { id: 'skole-1', src: '/images/tomrer/tomrer skole/5658d317-12cd-47bc-97f8-68a7d5e2e36a.avif', alt: 'Tømrer Skole Prosjekt', category: 'Tømrer', projectName: 'Tømrer Skole' }
           ]
         },
         {
@@ -216,17 +216,17 @@ const getStaticCategoryData = (category: string): CategoryData => {
           name: 'Tømrer Fasader',
           category: 'Tømrer',
           images: [
-            { id: 'fasader-1', src: '/images/Tømrer/tomrer fasader/DSC_8927.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
-            { id: 'fasader-2', src: '/images/Tømrer/tomrer fasader/DSC_8926.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
-            { id: 'fasader-3', src: '/images/Tømrer/tomrer fasader/DSC_8922.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
-            { id: 'fasader-4', src: '/images/Tømrer/tomrer fasader/DSC_8920.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
-            { id: 'fasader-5', src: '/images/Tømrer/tomrer fasader/DSC_8919.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
-            { id: 'fasader-6', src: '/images/Tømrer/tomrer fasader/DSC_8918.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
-            { id: 'fasader-7', src: '/images/Tømrer/tomrer fasader/DSC_8916.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
-            { id: 'fasader-8', src: '/images/Tømrer/tomrer fasader/DSC_8915.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
-            { id: 'fasader-9', src: '/images/Tømrer/tomrer fasader/DSC_8914.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
-            { id: 'fasader-10', src: '/images/Tømrer/tomrer fasader/DSC_8913.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
-            { id: 'fasader-11', src: '/images/Tømrer/tomrer fasader/DSC_8911.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' }
+            { id: 'fasader-1', src: '/images/tomrer/tomrer fasader/DSC_8927.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
+            { id: 'fasader-2', src: '/images/tomrer/tomrer fasader/DSC_8926.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
+            { id: 'fasader-3', src: '/images/tomrer/tomrer fasader/DSC_8922.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
+            { id: 'fasader-4', src: '/images/tomrer/tomrer fasader/DSC_8920.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
+            { id: 'fasader-5', src: '/images/tomrer/tomrer fasader/DSC_8919.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
+            { id: 'fasader-6', src: '/images/tomrer/tomrer fasader/DSC_8918.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
+            { id: 'fasader-7', src: '/images/tomrer/tomrer fasader/DSC_8916.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
+            { id: 'fasader-8', src: '/images/tomrer/tomrer fasader/DSC_8915.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
+            { id: 'fasader-9', src: '/images/tomrer/tomrer fasader/DSC_8914.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
+            { id: 'fasader-10', src: '/images/tomrer/tomrer fasader/DSC_8913.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' },
+            { id: 'fasader-11', src: '/images/tomrer/tomrer fasader/DSC_8911.avif', alt: 'Tømrer Fasader Prosjekt', category: 'Tømrer', projectName: 'Tømrer Fasader' }
           ]
         },
         {
@@ -234,15 +234,15 @@ const getStaticCategoryData = (category: string): CategoryData => {
           name: 'Tømrer Trappa',
           category: 'Tømrer',
           images: [
-            { id: 'trappa-1', src: '/images/Tømrer/tomrer trappa/l12.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' },
-            { id: 'trappa-2', src: '/images/Tømrer/tomrer trappa/l11.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' },
-            { id: 'trappa-3', src: '/images/Tømrer/tomrer trappa/l9.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' },
-            { id: 'trappa-4', src: '/images/Tømrer/tomrer trappa/l8.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' },
-            { id: 'trappa-5', src: '/images/Tømrer/tomrer trappa/l7.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' },
-            { id: 'trappa-6', src: '/images/Tømrer/tomrer trappa/l6.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' },
-            { id: 'trappa-7', src: '/images/Tømrer/tomrer trappa/l5.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' },
-            { id: 'trappa-8', src: '/images/Tømrer/tomrer trappa/l4.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' },
-            { id: 'trappa-9', src: '/images/Tømrer/tomrer trappa/l3.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' }
+            { id: 'trappa-1', src: '/images/tomrer/tomrer trappa/l12.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' },
+            { id: 'trappa-2', src: '/images/tomrer/tomrer trappa/l11.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' },
+            { id: 'trappa-3', src: '/images/tomrer/tomrer trappa/l9.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' },
+            { id: 'trappa-4', src: '/images/tomrer/tomrer trappa/l8.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' },
+            { id: 'trappa-5', src: '/images/tomrer/tomrer trappa/l7.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' },
+            { id: 'trappa-6', src: '/images/tomrer/tomrer trappa/l6.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' },
+            { id: 'trappa-7', src: '/images/tomrer/tomrer trappa/l5.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' },
+            { id: 'trappa-8', src: '/images/tomrer/tomrer trappa/l4.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' },
+            { id: 'trappa-9', src: '/images/tomrer/tomrer trappa/l3.avif', alt: 'Tømrer Trappa Prosjekt', category: 'Tømrer', projectName: 'Tømrer Trappa' }
           ]
         },
         {
@@ -250,17 +250,17 @@ const getStaticCategoryData = (category: string): CategoryData => {
           name: 'Hytte Tømrer',
           category: 'Tømrer',
           images: [
-            { id: 'hytte-1', src: '/images/Tømrer/hytte tomrer/h0.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
-            { id: 'hytte-2', src: '/images/Tømrer/hytte tomrer/h9.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
-            { id: 'hytte-3', src: '/images/Tømrer/hytte tomrer/h8.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
-            { id: 'hytte-4', src: '/images/Tømrer/hytte tomrer/h7.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
-            { id: 'hytte-5', src: '/images/Tømrer/hytte tomrer/h6.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
-            { id: 'hytte-6', src: '/images/Tømrer/hytte tomrer/h5.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
-            { id: 'hytte-7', src: '/images/Tømrer/hytte tomrer/h4.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
-            { id: 'hytte-8', src: '/images/Tømrer/hytte tomrer/h3.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
-            { id: 'hytte-9', src: '/images/Tømrer/hytte tomrer/h1.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
-            { id: 'hytte-10', src: '/images/Tømrer/hytte tomrer/ht2.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
-            { id: 'hytte-11', src: '/images/Tømrer/hytte tomrer/ht1.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' }
+            { id: 'hytte-1', src: '/images/tomrer/hytte tomrer/h0.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
+            { id: 'hytte-2', src: '/images/tomrer/hytte tomrer/h9.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
+            { id: 'hytte-3', src: '/images/tomrer/hytte tomrer/h8.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
+            { id: 'hytte-4', src: '/images/tomrer/hytte tomrer/h7.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
+            { id: 'hytte-5', src: '/images/tomrer/hytte tomrer/h6.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
+            { id: 'hytte-6', src: '/images/tomrer/hytte tomrer/h5.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
+            { id: 'hytte-7', src: '/images/tomrer/hytte tomrer/h4.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
+            { id: 'hytte-8', src: '/images/tomrer/hytte tomrer/h3.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
+            { id: 'hytte-9', src: '/images/tomrer/hytte tomrer/h1.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
+            { id: 'hytte-10', src: '/images/tomrer/hytte tomrer/ht2.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' },
+            { id: 'hytte-11', src: '/images/tomrer/hytte tomrer/ht1.avif', alt: 'Hytte Tømrer Prosjekt', category: 'Tømrer', projectName: 'Hytte Tømrer' }
           ]
         },
         {
@@ -268,22 +268,22 @@ const getStaticCategoryData = (category: string): CategoryData => {
           name: 'Tømrer Terrasse',
           category: 'Tømrer',
           images: [
-            { id: 'terrasse-1', src: '/images/Tømrer/tomrer terrasse/terasa17.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
-            { id: 'terrasse-2', src: '/images/Tømrer/tomrer terrasse/terasa15.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
-            { id: 'terrasse-3', src: '/images/Tømrer/tomrer terrasse/terasa14col.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
-            { id: 'terrasse-4', src: '/images/Tømrer/tomrer terrasse/terasa13col.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
-            { id: 'terrasse-5', src: '/images/Tømrer/tomrer terrasse/terasa12cool.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
-            { id: 'terrasse-6', src: '/images/Tømrer/tomrer terrasse/terasa11cool.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
-            { id: 'terrasse-7', src: '/images/Tømrer/tomrer terrasse/terasa10.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
-            { id: 'terrasse-8', src: '/images/Tømrer/tomrer terrasse/terasa9.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
-            { id: 'terrasse-9', src: '/images/Tømrer/tomrer terrasse/terasa8.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
-            { id: 'terrasse-10', src: '/images/Tømrer/tomrer terrasse/terasa7.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
-            { id: 'terrasse-11', src: '/images/Tømrer/tomrer terrasse/terasa 6.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
-            { id: 'terrasse-12', src: '/images/Tømrer/tomrer terrasse/terasa5.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
-            { id: 'terrasse-13', src: '/images/Tømrer/tomrer terrasse/terasa4.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
-            { id: 'terrasse-14', src: '/images/Tømrer/tomrer terrasse/terasa3.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
-            { id: 'terrasse-15', src: '/images/Tømrer/tomrer terrasse/terasa2.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
-            { id: 'terrasse-16', src: '/images/Tømrer/tomrer terrasse/terassa.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' }
+            { id: 'terrasse-1', src: '/images/tomrer/tomrer terrasse/terasa17.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
+            { id: 'terrasse-2', src: '/images/tomrer/tomrer terrasse/terasa15.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
+            { id: 'terrasse-3', src: '/images/tomrer/tomrer terrasse/terasa14col.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
+            { id: 'terrasse-4', src: '/images/tomrer/tomrer terrasse/terasa13col.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
+            { id: 'terrasse-5', src: '/images/tomrer/tomrer terrasse/terasa12cool.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
+            { id: 'terrasse-6', src: '/images/tomrer/tomrer terrasse/terasa11cool.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
+            { id: 'terrasse-7', src: '/images/tomrer/tomrer terrasse/terasa10.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
+            { id: 'terrasse-8', src: '/images/tomrer/tomrer terrasse/terasa9.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
+            { id: 'terrasse-9', src: '/images/tomrer/tomrer terrasse/terasa8.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
+            { id: 'terrasse-10', src: '/images/tomrer/tomrer terrasse/terasa7.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
+            { id: 'terrasse-11', src: '/images/tomrer/tomrer terrasse/terasa 6.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
+            { id: 'terrasse-12', src: '/images/tomrer/tomrer terrasse/terasa5.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
+            { id: 'terrasse-13', src: '/images/tomrer/tomrer terrasse/terasa4.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
+            { id: 'terrasse-14', src: '/images/tomrer/tomrer terrasse/terasa3.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
+            { id: 'terrasse-15', src: '/images/tomrer/tomrer terrasse/terasa2.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' },
+            { id: 'terrasse-16', src: '/images/tomrer/tomrer terrasse/terassa.avif', alt: 'Tømrer Terrasse Prosjekt', category: 'Tømrer', projectName: 'Tømrer Terrasse' }
           ]
         },
         {
@@ -291,10 +291,10 @@ const getStaticCategoryData = (category: string): CategoryData => {
           name: 'Tømrer Tak',
           category: 'Tømrer',
           images: [
-            { id: 'tak-1', src: '/images/Tømrer/tomrer tak/takstein1.avif', alt: 'Tømrer Tak Prosjekt', category: 'Tømrer', projectName: 'Tømrer Tak' },
-            { id: 'tak-2', src: '/images/Tømrer/tomrer tak/takstein.avif', alt: 'Tømrer Tak Prosjekt', category: 'Tømrer', projectName: 'Tømrer Tak' },
-            { id: 'tak-3', src: '/images/Tømrer/tomrer tak/lekter.avif', alt: 'Tømrer Tak Prosjekt', category: 'Tømrer', projectName: 'Tømrer Tak' },
-            { id: 'tak-4', src: '/images/Tømrer/tomrer tak/20250626_082022.avif', alt: 'Tømrer Tak Prosjekt', category: 'Tømrer', projectName: 'Tømrer Tak' }
+            { id: 'tak-1', src: '/images/tomrer/tomrer tak/takstein1.avif', alt: 'Tømrer Tak Prosjekt', category: 'Tømrer', projectName: 'Tømrer Tak' },
+            { id: 'tak-2', src: '/images/tomrer/tomrer tak/takstein.avif', alt: 'Tømrer Tak Prosjekt', category: 'Tømrer', projectName: 'Tømrer Tak' },
+            { id: 'tak-3', src: '/images/tomrer/tomrer tak/lekter.avif', alt: 'Tømrer Tak Prosjekt', category: 'Tømrer', projectName: 'Tømrer Tak' },
+            { id: 'tak-4', src: '/images/tomrer/tomrer tak/20250626_082022.avif', alt: 'Tømrer Tak Prosjekt', category: 'Tømrer', projectName: 'Tømrer Tak' }
           ]
         },
         {
@@ -302,37 +302,37 @@ const getStaticCategoryData = (category: string): CategoryData => {
           name: 'Mariaus Tømrer',
           category: 'Tømrer',
           images: [
-            { id: 'mariaus-1', src: '/images/Tømrer/mariaus tomrer/DSC_8920.avif', alt: 'Mariaus Tømrer Prosjekt', category: 'Tømrer', projectName: 'Mariaus Tømrer' },
-            { id: 'mariaus-2', src: '/images/Tømrer/mariaus tomrer/DSC_8919.avif', alt: 'Mariaus Tømrer Prosjekt', category: 'Tømrer', projectName: 'Mariaus Tømrer' },
-            { id: 'mariaus-3', src: '/images/Tømrer/mariaus tomrer/DSC_8918.avif', alt: 'Mariaus Tømrer Prosjekt', category: 'Tømrer', projectName: 'Mariaus Tømrer' },
-            { id: 'mariaus-4', src: '/images/Tømrer/mariaus tomrer/DSC_8916.avif', alt: 'Mariaus Tømrer Prosjekt', category: 'Tømrer', projectName: 'Mariaus Tømrer' },
-            { id: 'mariaus-5', src: '/images/Tømrer/mariaus tomrer/DSC_8915.avif', alt: 'Mariaus Tømrer Prosjekt', category: 'Tømrer', projectName: 'Mariaus Tømrer' },
-            { id: 'mariaus-6', src: '/images/Tømrer/mariaus tomrer/DSC_8914.avif', alt: 'Mariaus Tømrer Prosjekt', category: 'Tømrer', projectName: 'Mariaus Tømrer' },
-            { id: 'mariaus-7', src: '/images/Tømrer/mariaus tomrer/DSC_8913.avif', alt: 'Mariaus Tømrer Prosjekt', category: 'Tømrer', projectName: 'Mariaus Tømrer' },
-            { id: 'mariaus-8', src: '/images/Tømrer/mariaus tomrer/DSC_8911.avif', alt: 'Mariaus Tømrer Prosjekt', category: 'Tømrer', projectName: 'Mariaus Tømrer' }
+            { id: 'mariaus-1', src: '/images/tomrer/mariaus tomrer/DSC_8920.avif', alt: 'Mariaus Tømrer Prosjekt', category: 'Tømrer', projectName: 'Mariaus Tømrer' },
+            { id: 'mariaus-2', src: '/images/tomrer/mariaus tomrer/DSC_8919.avif', alt: 'Mariaus Tømrer Prosjekt', category: 'Tømrer', projectName: 'Mariaus Tømrer' },
+            { id: 'mariaus-3', src: '/images/tomrer/mariaus tomrer/DSC_8918.avif', alt: 'Mariaus Tømrer Prosjekt', category: 'Tømrer', projectName: 'Mariaus Tømrer' },
+            { id: 'mariaus-4', src: '/images/tomrer/mariaus tomrer/DSC_8916.avif', alt: 'Mariaus Tømrer Prosjekt', category: 'Tømrer', projectName: 'Mariaus Tømrer' },
+            { id: 'mariaus-5', src: '/images/tomrer/mariaus tomrer/DSC_8915.avif', alt: 'Mariaus Tømrer Prosjekt', category: 'Tømrer', projectName: 'Mariaus Tømrer' },
+            { id: 'mariaus-6', src: '/images/tomrer/mariaus tomrer/DSC_8914.avif', alt: 'Mariaus Tømrer Prosjekt', category: 'Tømrer', projectName: 'Mariaus Tømrer' },
+            { id: 'mariaus-7', src: '/images/tomrer/mariaus tomrer/DSC_8913.avif', alt: 'Mariaus Tømrer Prosjekt', category: 'Tømrer', projectName: 'Mariaus Tømrer' },
+            { id: 'mariaus-8', src: '/images/tomrer/mariaus tomrer/DSC_8911.avif', alt: 'Mariaus Tømrer Prosjekt', category: 'Tømrer', projectName: 'Mariaus Tømrer' }
           ]
         }
       ],
       individualImages: [
-        { id: 's21', src: '/images/Tømrer/s21.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 's20', src: '/images/Tømrer/s20.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 's19', src: '/images/Tømrer/s19.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 's18', src: '/images/Tømrer/s18.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 's17', src: '/images/Tømrer/s17.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 's16', src: '/images/Tømrer/s16.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 's144', src: '/images/Tømrer/s144.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 's14', src: '/images/Tømrer/s14.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 's13', src: '/images/Tømrer/s13.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 's11', src: '/images/Tømrer/s11.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 's9', src: '/images/Tømrer/s9.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 's8', src: '/images/Tømrer/s8.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 's6', src: '/images/Tømrer/s6.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 's5', src: '/images/Tømrer/s5.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 's4', src: '/images/Tømrer/s4.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 's3', src: '/images/Tømrer/s3.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 's2', src: '/images/Tømrer/s2.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 'stogas', src: '/images/Tømrer/stogas.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
-        { id: 'facebook', src: '/images/Tømrer/464269176_3319981941476867_440079571175753359_n.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' }
+        { id: 's21', src: '/images/tomrer/s21.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 's20', src: '/images/tomrer/s20.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 's19', src: '/images/tomrer/s19.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 's18', src: '/images/tomrer/s18.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 's17', src: '/images/tomrer/s17.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 's16', src: '/images/tomrer/s16.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 's144', src: '/images/tomrer/s144.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 's14', src: '/images/tomrer/s14.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 's13', src: '/images/tomrer/s13.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 's11', src: '/images/tomrer/s11.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 's9', src: '/images/tomrer/s9.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 's8', src: '/images/tomrer/s8.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 's6', src: '/images/tomrer/s6.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 's5', src: '/images/tomrer/s5.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 's4', src: '/images/tomrer/s4.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 's3', src: '/images/tomrer/s3.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 's2', src: '/images/tomrer/s2.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 'stogas', src: '/images/tomrer/stogas.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' },
+        { id: 'facebook', src: '/images/tomrer/464269176_3319981941476867_440079571175753359_n.avif', alt: 'Tømrer Arbeid', category: 'Tømrer' }
       ]
     },
     'Graving': {
