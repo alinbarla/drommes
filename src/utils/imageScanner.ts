@@ -28,7 +28,7 @@ const categoryMapping: { [key: string]: string } = {
   'murer': 'Murer',
   'maling': 'Maling',
   'elektriker': 'Elektriker',
-  'Rørlegger': 'Rørlegger',
+  'rorlegger': 'Rørlegger',
   'kjokken': 'Kjøkken',
   'arkitekt': 'Arkitekt',
   'salg-av-byggematerialer': 'Materialer'
@@ -409,7 +409,10 @@ const getStaticCategoryData = (category: string): CategoryData => {
     'Rørlegger': {
       category: 'Rørlegger',
       projects: [],
-      individualImages: []
+      individualImages: [
+        { id: 'rorlegger-main', src: '/images/rorlegger/main.avif', alt: 'Rørlegger Arbeid', category: 'Rørlegger' },
+        { id: 'rorlegger-1', src: '/images/rorlegger/When-To-Call-a-Plumber.avif', alt: 'Rørlegger Arbeid', category: 'Rørlegger' }
+      ]
     },
     'Kjøkken': {
       category: 'Kjøkken',

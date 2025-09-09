@@ -82,7 +82,7 @@ const Home = () => {
       id: 7,
       title: 'Rørlegger',
       description: 'Kompetent rørleggerarbeid og sanitetssystemer. Vi leverer alt fra ny installasjon til reparasjoner. Gratis diagnose og rask respons.',
-      image: '/images/Rørlegger/main.avif',
+      image: '/images/rorlegger/main.avif',
       category: 'Rørlegger'
     },
     {

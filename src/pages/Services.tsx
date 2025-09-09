@@ -118,7 +118,7 @@ const Services = () => {
         'Gulvvarme og oppvarming'
       ],
 
-      image: '/images/Rørlegger/main.avif',
+      image: '/images/rorlegger/main.avif',
       category: 'Rørlegger',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand'],
       duration: '1-3 dager',

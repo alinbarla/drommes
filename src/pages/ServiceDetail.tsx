@@ -321,6 +321,67 @@ const ServiceDetail = () => {
       ],
       keywords: ['murer drammen', 'murerarbeid lier', 'mur svelvik', 'murer holmestrand', 'fundament drammen', 'fasade lier']
     },
+    'graving': {
+      title: 'Gravetjenester i Drammen',
+      description: 'Kompetent graving og grunnarbeid for alle typer prosjekter i Drammen, Lier, Svelvik og Holmestrand. Vi har egen maskinpark og erfaren operatører.',
+      longDescription: 'Drømme Huset AS tilbyr profesjonelle gravetjenester i Drammen, Lier, Svelvik og Holmestrand. Med egen maskinpark og erfarne operatører leverer vi raskt og effektivt grunnarbeid for alle typer prosjekter. Vi har over 25 års erfaring med graving og grunnarbeid.',
+      features: [
+        'Grunnarbeid og fundamentgraving',
+        'Avløpsgraving og rørlegging',
+        'Kabelgraving og elektriske installasjoner',
+        'Hagearbeid og landskapsgraving',
+        'Drenering og vannløsning',
+        'Støttemurer og terrasser',
+        'Oppfylling og jordarbeid',
+        'Maskinutleie og operatørtjenester'
+      ],
+      image: '/images/graving/main.avif',
+      category: 'Graving',
+      areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand', 'Konnerud', 'Gulskogen', 'Åssiden', 'Bragernes'],
+      duration: '1-5 dager',
+      guarantee: '2 års garanti',
+      process: [
+        {
+          step: 1,
+          title: 'Vurdering og planlegging',
+          description: 'Vi vurderer prosjektet og lager en detaljert plan for gravingen'
+        },
+        {
+          step: 2,
+          title: 'Markering og sikkerhet',
+          description: 'Vi markerer alle rør og kabler og sikrer at alt er trygt'
+        },
+        {
+          step: 3,
+          title: 'Graving og utførelse',
+          description: 'Profesjonell graving med moderne maskiner og teknikker'
+        },
+        {
+          step: 4,
+          title: 'Oppfylling og rydding',
+          description: 'Vi fyller opp og rydder opp etter oss for et rent resultat'
+        }
+      ],
+      faqs: [
+        {
+          question: "Hvilke typer graving tilbyr dere?",
+          answer: "Vi tilbyr alt fra grunnarbeid og fundamentgraving til avløpsgraving, kabelgraving, hagearbeid og drenering. Vi har maskiner for alle typer prosjekter."
+        },
+        {
+          question: "Har dere egen maskinpark?",
+          answer: "Ja, vi har egen maskinpark med moderne gravemaskiner og annet utstyr. Dette gir oss full kontroll over prosjektet og raskere levering."
+        },
+        {
+          question: "Hvor raskt kan dere starte?",
+          answer: "Vi kan ofte starte innen 1-2 dager for de fleste prosjekter. For akutte behov kan vi komme samme dag."
+        },
+        {
+          question: "Hva med sikkerhet og markering?",
+          answer: "Vi markerer alltid rør og kabler før vi starter graving. Vi har erfaring med alle typer underjordiske installasjoner og sikrer at alt er trygt."
+        }
+      ],
+      keywords: ['graving drammen', 'grunnarbeid lier', 'graving svelvik', 'graving holmestrand', 'gravemaskin drammen', 'avløpsgraving lier']
+    },
     'rorlegger': {
       title: 'Rørlegger i Drammen',
       description: 'Kompetent rørleggerarbeid og sanitetssystemer i Drammen-området. Vi leverer alt fra ny installasjon til reparasjoner.',
@@ -336,7 +397,7 @@ const ServiceDetail = () => {
         'Vannbehandling og filtrering'
       ],
 
-      image: '/images/Rørlegger/main.avif',
+      image: '/images/rorlegger/main.avif',
       category: 'Rørlegger',
       areas: ['Drammen', 'Lier', 'Svelvik', 'Holmestrand', 'Konnerud', 'Gulskogen', 'Åssiden', 'Bragernes'],
       duration: '1-3 dager',
