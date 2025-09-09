@@ -67,6 +67,12 @@ export const getCategoryImages = async (category: string): Promise<CategoryData>
     return { category, projects: [], individualImages: [] };
   }
 
+  // Use static data for categories that have it defined
+  const staticData = getStaticCategoryData(category);
+  if (staticData.individualImages.length > 0 || staticData.projects.length > 0) {
+    return staticData;
+  }
+
   const now = Date.now();
   
   // Check if we have fresh cached data
@@ -86,8 +92,8 @@ export const getCategoryImages = async (category: string): Promise<CategoryData>
   } catch (error) {
     console.error('Error scanning category images:', error);
     
-    // Return cached data if available, otherwise empty data
-    return scannedDataCache[category] || { category, projects: [], individualImages: [] };
+    // Return cached data if available, otherwise static data
+    return scannedDataCache[category] || staticData;
   }
 };
 
