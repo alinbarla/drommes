@@ -103,7 +103,7 @@ const Home = () => {
       id: 10,
       title: 'Salg av byggematerialer',
       description: 'Kvalitetsbyggematerialer til konkurransedyktige priser. Vi leverer direkte til byggeplass og tilbyr rabatter for større ordrer.',
-      image: '/images/salg-av-byggematerialer/main.avif',
+      image: '/images/material/main.avif',
       category: 'Materialer'
     }
   ];

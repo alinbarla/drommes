@@ -31,7 +31,7 @@ const categoryMapping: { [key: string]: string } = {
   'rorlegger': 'Rørlegger',
   'kjokken': 'Kjøkken',
   'arkitekt': 'Arkitekt',
-  'salg-av-byggematerialer': 'Materialer'
+  'material': 'Materialer'
 };
 
 // Cache for scanned data
@@ -418,12 +418,10 @@ const getStaticCategoryData = (category: string): CategoryData => {
       category: 'Kjøkken',
       projects: [],
       individualImages: [
-        { id: 'kjokken-1', src: '/images/kjokken/494047080_122096071076900552_6938437232687190817_n.avif', alt: 'Kjøkken Arbeid', category: 'Kjøkken' },
-        { id: 'kjokken-2', src: '/images/kjokken/496037868_122095997480900552_3085930645863531839_n.avif', alt: 'Kjøkken Arbeid', category: 'Kjøkken' },
-        { id: 'kjokken-3', src: '/images/kjokken/491274050_122095993784900552_8390749827450607795_n.avif', alt: 'Kjøkken Arbeid', category: 'Kjøkken' },
-        { id: 'kjokken-4', src: '/images/kjokken/main.avif', alt: 'Kjøkken Arbeid', category: 'Kjøkken' },
-        { id: 'kjokken-5', src: '/images/kjokken/496948007_122095993700900552_2714223174870920586_n.avif', alt: 'Kjøkken Arbeid', category: 'Kjøkken' },
-        { id: 'kjokken-6', src: '/images/kjokken/498324039_122095993490900552_7675416108170979667_n.avif', alt: 'Kjøkken Arbeid', category: 'Kjøkken' }
+        { id: 'kjokken-main', src: '/images/kjokken/main.avif', alt: 'Kjøkken Arbeid', category: 'Kjøkken' },
+        { id: 'kjokken-1', src: '/images/kjokken/491274050_122095993784900552_8390749827450607795_n.avif', alt: 'Kjøkken Arbeid', category: 'Kjøkken' },
+        { id: 'kjokken-2', src: '/images/kjokken/496948007_122095993700900552_2714223174870920586_n.avif', alt: 'Kjøkken Arbeid', category: 'Kjøkken' },
+        { id: 'kjokken-3', src: '/images/kjokken/498324039_122095993490900552_7675416108170979667_n.avif', alt: 'Kjøkken Arbeid', category: 'Kjøkken' }
       ]
     },
     'Arkitekt': {
@@ -448,18 +446,19 @@ const getStaticCategoryData = (category: string): CategoryData => {
       category: 'Materialer',
       projects: [],
       individualImages: [
-        { id: 'material-1', src: '/images/salg-av-byggematerialer/1344258.avif', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-2', src: '/images/salg-av-byggematerialer/16085_2B16087-1_236f6aedd4-bdb6-4715-92a2-52062958133c_1.avif', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-3', src: '/images/salg-av-byggematerialer/20536_1.avif', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-4', src: '/images/salg-av-byggematerialer/08419148_1.avif', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-5', src: '/images/salg-av-byggematerialer/08148048_2.avif', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-6', src: '/images/salg-av-byggematerialer/08148098_2.avif', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-7', src: '/images/salg-av-byggematerialer/08748148_4.avif', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-8', src: '/images/salg-av-byggematerialer/08736048_6.avif', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-9', src: '/images/salg-av-byggematerialer/terrasse bord2.avif', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-10', src: '/images/salg-av-byggematerialer/terrasse bord.avif', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-11', src: '/images/salg-av-byggematerialer/OSB-TG2_4.avif', alt: 'Byggematerialer', category: 'Materialer' },
-        { id: 'material-12', src: '/images/salg-av-byggematerialer/perdangos-plokstes-hcs-200.avif', alt: 'Byggematerialer', category: 'Materialer' }
+        { id: 'material-main', src: '/images/material/main.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-1', src: '/images/material/1344258.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-2', src: '/images/material/20536_1.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-3', src: '/images/material/08419148_1.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-4', src: '/images/material/08148048_2.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-5', src: '/images/material/08148098_2.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-6', src: '/images/material/08748148_4.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-7', src: '/images/material/08736048_6.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-8', src: '/images/material/terrasse bord2.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-9', src: '/images/material/terrasse bord.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-10', src: '/images/material/OSB-TG2_4.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-11', src: '/images/material/perdangos-plokstes-hcs-200.avif', alt: 'Byggematerialer', category: 'Materialer' },
+        { id: 'material-12', src: '/images/material/20250814_164503.avif', alt: 'Byggematerialer', category: 'Materialer' }
       ]
     }
   };
