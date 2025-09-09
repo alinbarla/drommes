@@ -390,6 +390,7 @@ const getStaticCategoryData = (category: string): CategoryData => {
       category: 'Maling',
       projects: [],
       individualImages: [
+        { id: 'maling-main', src: '/images/maling/main.avif', alt: 'Maling Arbeid', category: 'Maling' },
         { id: 'maling-1', src: '/images/maling/b57d2e04-6744-4a43-8c99-de22a05a551c.avif', alt: 'Maling Arbeid', category: 'Maling' },
         { id: 'maling-2', src: '/images/maling/3c98f10b-7aaa-429e-937a-8d42c829dd5c.avif', alt: 'Maling Arbeid', category: 'Maling' },
         { id: 'maling-3', src: '/images/maling/5bf869c3-36ff-462c-a225-a63e1a11554f.gif', alt: 'Maling Arbeid', category: 'Maling' },
